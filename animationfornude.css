@@ -1,0 +1,15 @@
+.nudeanim {
+    position: relative;
+    animation-name: nude;
+    animation-duration: 10s;
+    transition: 2s;
+    transition-timing-function: ease-in-out 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes nude {
+    0% {transform: rotate(10deg); left: 0}
+    25% {transform: rotate(370deg); left: 0}
+    50% {transform: rotate(350deg); left: 88%}
+    75% {transform: rotate(-10deg); left: 88%}
+    100% {transform: rotate(10deg); left: 0}
+}

@@ -1,0 +1,10 @@
+table,th,td {
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+th, td {
+    background-color: rgb(219, 150, 150);
+}
+table {
+    box-shadow: black 5px 5px 10px;
+}
