@@ -35,3 +35,9 @@ h2 {
         --blue: lightblue;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .plots {
+        width: 500px;
+    }
+}

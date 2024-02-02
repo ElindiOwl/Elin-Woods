@@ -2172,4 +2172,167 @@ for (const x in receivedJSON) {
 document.getElementById("JSONReceivingObject").innerHTML = `${receivedText.slice(0, -2)}.`;
 
 
+
 const cGridCanvas = document.getElementById("cGridCanvas");
+const dots = cGridCanvas.getContext("2d");
+cGridCanvas.height = cGridCanvas.height;
+dots.transform(1, 0, 0, -1, 0, cGridCanvas.height);
+
+const xGridArray = [10,30,20,40,50,70,95,115,120,140, 65, 85, 150];
+const yGridArray = [2,2,8,8,14,14,11,11,3,3,6,6, 15];
+
+dots.fillStyle = "red";
+for (let i = 0; i < xGridArray.length-1; i++) {
+    let x = xGridArray[i]*300/150;
+    let y = yGridArray[i]*300/15;
+    dots.beginPath();
+    dots.ellipse(x, y, 7, 7, 0, 0, Math.PI * 2);
+    dots.fill();
+}
+
+
+const lineGraphCanvas = document.getElementById("lineGraphCanvas");
+const line = lineGraphCanvas.getContext("2d");
+line.fillStyle = "#ffea00";
+lineGraphCanvas.height = lineGraphCanvas.width;
+line.transform(1, 0, 0, -1, 0, lineGraphCanvas.height);
+
+let xMax = lineGraphCanvas.height;
+let slope = 1;
+let intercept = 0;
+
+line.moveTo(0, intercept);
+line.lineTo(xMax, f(xMax));
+line.strokeStyle = "green";
+line.stroke();
+
+function f(x) {
+    return x * slope + intercept;
+}
+
+{
+    const canvas = document.getElementById("canvasGraphTogether");
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    canvas.height = canvas.width;
+    ctx.transform(1, 0, 0, -1, 0, canvas.height)
+
+    let xMax = canvas.height;
+    let yMax = canvas.width;
+    let slope = 1;
+    let intercept = 0;
+
+    const xArray = [50,60,70,80,90,100,110,120,130,140,150];
+    const yArray = [7,8,8,9,9,9,10,11,14,14,15];
+
+// Plot Scatter
+    ctx.fillStyle = "pink";
+    for (let i = 0; i < xArray.length-1; i++) {
+        let x = xArray[i]*xMax/150;
+        let y = yArray[i]*yMax/15;
+        ctx.beginPath();
+        ctx.ellipse(x, y, 6, 6, 0, 0, Math.PI * 2);
+        ctx.fill();
+    }
+
+// Plot Line
+    ctx.moveTo(0, intercept);
+    ctx.lineTo(xMax, f2(xMax));
+    ctx.strokeStyle = "yellow";
+    ctx.stroke();
+
+// Line Function<br>
+    function f2(x) {
+        return x * slope + intercept;
+    }
+}
+
+
+const elemPowersArrayforColumn = ["Fire","Air","Earth","Water","Presence(Chaos)"];
+const elemPowerStatsArrayforColumn = [45,23,30,20,60];
+
+const showDataColumn = [{
+    x:elemPowersArrayforColumn,
+    y:elemPowerStatsArrayforColumn,
+    type:"bar",
+    orientation:"v",
+    marker: {color:"rgba(150,0,27,0.6)"}
+}];
+
+const elemLayoutColumn = {title:"World's level of natural powers"};
+Plotly.newPlot("columnElemPowersPlotWithPlotly", showDataColumn, elemLayoutColumn);
+
+
+
+const elemPowersArrayforRow = [45,23,30,20,60];
+const elemPowerStatsArrayforRow = ["Fire ","Air ","Earth ","Water ","Chaos "];
+
+const showDataRow = [{
+    x:elemPowersArrayforRow,
+    y:elemPowerStatsArrayforRow,
+    type:"bar",
+    orientation:"h",
+    marker: {color:"rgba(0,128,150,0.6)"}
+}];
+
+const elemLayoutRow = {title:"World's level of natural powers"};
+Plotly.newPlot("rowElemPowersPlotWithPlotly", showDataRow, elemLayoutRow);
+
+
+
+const elemPowersArrayforPie = ["Fire","Air","Earth","Water","Presence(Chaos)"];
+const elemPowerStatsArrayforPie = [45,23,30,20,60];
+
+const elemLayoutPie = {title:"World's level of natural powers"};
+
+const showDataPie = [{labels:elemPowersArrayforPie, values:elemPowerStatsArrayforPie, type:"pie"}];
+Plotly.newPlot("pieElemPowersPlotWithPlotly", showDataPie, elemLayoutPie);
+
+
+
+const elemPowersArrayforDonut = ["Fire","Air","Earth","Water","Presence(Chaos)"];
+const elemPowerStatsArrayforDonut = [45,23,30,20,60];
+
+const elemLayoutDonut = {title:"World's level of natural powers"};
+
+const showDataDonut = [{labels:elemPowersArrayforDonut, values:elemPowerStatsArrayforDonut, hole:.3, type:"pie"}];
+Plotly.newPlot("donutElemPowersPlotWithPlotly", showDataDonut, elemLayoutDonut);
+
+
+
+let equations = "Math.sin(x)";
+
+const xEqValues = [];
+const yEqValues = [];
+for (let x = 0; x <= 10; x += 0.1) {
+    xEqValues.push(x);
+    yEqValues.push(eval(equations));
+}
+
+const eqData = [{x:xEqValues, y:yEqValues, mode:"lines"}];
+const eqlayout = {title: "y = " + equations};
+Plotly.newPlot("equationsPlotWithPlotly", eqData, eqlayout);
+
+
+
+{
+    const xArray = [50,60,70,80,90,100,110,120,130,140,150];
+    const yArray = [7,8,8,9,9,9,10,11,14,14,15];
+
+// Define Data
+    const data = [{
+        x: xArray,
+        y: yArray,
+        mode:"lines"
+    }];
+
+// Define Layout
+    const layout = {
+        xaxis: {range: [40, 160], title: "Square Meters"},
+        yaxis: {range: [5, 16], title: "Price in Millions"},
+        title: "House Prices vs. Size"
+    };
+
+// Display using Plotly
+    Plotly.newPlot("linedGraphPlotWithPlotly", data, layout);
+}

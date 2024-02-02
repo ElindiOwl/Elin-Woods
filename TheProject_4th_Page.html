@@ -998,19 +998,50 @@ The str variable holds the content of the input field
         <br>
         <div id="C11">
             <p style="font-size: 30px">Graphics</p>
-            <canvas id="dottedGraph" width="300" height="300" style="border:1px solid grey"></canvas>
-            <p id=""></p>
-            <p id=""></p>
-            <p id=""></p>
-            <p id=""></p>
-            <p id=""></p>
-        </div>
-        <div>
-            <p id=""></p>
-            <p id=""></p>
-            <p id=""></p>
-            <p id=""></p>
-            <p id=""></p>
+            <canvas id="cGridCanvas" width="300" height="300" style="border:1px solid grey; background-color: #262633"></canvas>
+            <canvas id="lineGraphCanvas" width="300" height="300" style="border:1px solid grey; background-color: #f4ffc6"></canvas>
+            <canvas id="canvasGraphTogether" width="300" height="300" style="border:1px solid grey; background-color: #441400"></canvas>
+            <br>
+            <br>
+            <div class="plots" id="columnElemPowersPlotWithPlotly" style="display:flex; width:700px; max-width:100%"></div>
+            <br>
+            <div class="plots" id="rowElemPowersPlotWithPlotly" style="display:flex; width:700px; max-width:100%"></div>
+            <br>
+            <div class="plots" id="pieElemPowersPlotWithPlotly" style="display:flex; width:700px; max-width:100%"></div>
+            <br>
+            <div class="plots" id="donutElemPowersPlotWithPlotly" style="display:flex; width:700px; max-width:100%"></div>
+            <br>
+            <div class="plots" id="equationsPlotWithPlotly" style="display:flex; width:700px; max-width:100%"></div>
+            <br>
+            <div class="plots" id="linedGraphPlotWithPlotly" style="display:flex; width:700px; max-width:100%"></div>
+            <br>
+            <br>
+            <pre>
+There are 2 more method packs like:
+
+Chart.js is an free JavaScript library for making HTML-based charts.
+It is one of the simplest visualization libraries for JavaScript, and comes with the many built-in chart types:
+ Scatter Plot
+ Line Chart
+ Bar Chart
+ Pie Chart
+ Donut Chart
+ Bubble Chart
+ Area Chart
+ Radar Chart
+ Mixed Chart
+
+Google Chart. From simple line charts to complex hierarchical tree maps,
+the Google Chart gallery provides a large number of ready-to-use chart types:
+ Scatter Chart
+ Line Chart
+ Bar / Column Chart
+ Area Chart
+ Pie Chart
+ Donut Chart
+ Org Chart
+ Map / Geo Chart
+            </pre>
         </div>
     </div>
 </div>
@@ -1069,6 +1100,7 @@ The str variable holds the content of the input field
 <div class="upward"></div>
 <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script src="JavaScriptTraining/Jscode.js"></script>
 <script src="JavaScriptTraining/morePractice.js"></script>
 <script src="upwardfunc.js"></script>
