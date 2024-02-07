@@ -1,7 +1,11 @@
 let intervalid;
 
 document.querySelectorAll('.dropdown-toggle').forEach(e => {
-    e.addEventListener('click', e => {
+    forDropDownMenu(e);
+});
+
+function forDropDownMenu(toggle) {
+    toggle.addEventListener('click', e => {
         const menu = e.currentTarget.dataset.path;
         document.querySelectorAll('.dropdown-menu').forEach(e => {
             if (!document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
@@ -31,4 +35,4 @@ document.querySelectorAll('.dropdown-toggle').forEach(e => {
             }
         });
     });
-});
+}

@@ -34,44 +34,48 @@
         <a href="file:///C:/Users/danie/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/FrontendStudying/TheProject.html"
            class="navbar-brand">ELIN'WOODS</a>
         <div class="container">
+            <div class="dropdown navlinks">
+                <button data-path="two" class="dropdown-toggle dropdown-button">
+                    Page Navigation
+                </button>
+                <div data-target="two" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a href="#C1" class="dropdown-item">White sheet</a>
+                    <a href="#C2" class="dropdown-item">Pictures and tints</a>
+                    <a href="#C3" class="dropdown-item">A bit of writings</a>
+                    <a href="#C4" class="dropdown-item">Buttons and links</a>
+                    <a href="#C5" class="dropdown-item">Image maps</a>
+                </div>
+            </div>
+            <div class="dropdown navlinks">
+                <button data-path="three" class="dropdown-toggle dropdown-button">
+                    Page Selection
+                </button>
+                <div data-target="three" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a href="TheProject.html" class="dropdown-item">First Page</a>
+                    <a href="TheProject_2nd_Page.html" class="dropdown-item">Second Page</a>
+                    <a href="TheProject_3rd_Page.html" class="dropdown-item">Third Page</a>
+                    <a href="TheProject_4th_Page.html" class="dropdown-item">Fourth Page</a>
+                </div>
+            </div>
             <div class="navbar-wrap">
-                <div class="dropdown navlinks">
+                <div class="dropdown navlinks removeAfterRegister">
                     <button data-path="one" class="dropdown-toggle dropdown-button">
-                    Log in / Register
+                        Duck in
                     </button>
-                    <div data-target="one" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <form id="registerArea" onclick="event.stopPropagation()" action="https://www.w3schools.com/action_page.php" target="_blank" method="post">
-                        <label style="color: white" for="fnick">Nickname:</label><br>
-                        <input type="text" id="fnick" name="fnick" placeholder="JoJo" required><br>
-                        <label style="color: white" for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" placeholder="JosephJoestar@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                        <label style="color: white" for="phone">Phone number:</label><br>
-                        <input type="tel" id="phone" name="phone" placeholder="8(123)456-78-90" minlength="11" maxlength="15" pattern="/^+?\d{1,4}?[-.\s]?(?\d{1,3}?)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/" required><br><br>
-                        <input id="registerInfo" onclick="sendRegisterData()" type="submit" value="Submit">
-                    </form>
-                    </div>
-                </div>
-                <div class="dropdown navlinks">
-                    <button data-path="two" class="dropdown-toggle dropdown-button">
-                        Page Navigation
-                    </button>
-                    <div data-target="two" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a href="#C1" class="dropdown-item">White sheet</a>
-                        <a href="#C2" class="dropdown-item">Pictures and tints</a>
-                        <a href="#C3" class="dropdown-item">A bit of writings</a>
-                        <a href="#C4" class="dropdown-item">Buttons and links</a>
-                        <a href="#C5" class="dropdown-item">Image maps</a>
-                    </div>
-                </div>
-                <div class="dropdown navlinks">
-                    <button data-path="three" class="dropdown-toggle dropdown-button">
-                        Page Selection
-                    </button>
-                    <div data-target="three" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a href="TheProject.html" class="dropdown-item">First Page</a>
-                        <a href="TheProject_2nd_Page.html" class="dropdown-item">Second Page</a>
-                        <a href="TheProject_3rd_Page.html" class="dropdown-item">Third Page</a>
-                        <a href="TheProject_4th_Page.html" class="dropdown-item">Fourth Page</a>
+                    <div data-target="one" class="dropdown-menu dropdown-menuReg" aria-labelledby="dropdownMenuButton" style="left: -210%">
+                        <form id="registerArea" onclick="event.stopPropagation()">
+                            <label style="color: white" for="fnick">Nickname:</label><br>
+                            <input type="text" id="fnick" name="fnick" placeholder="JoJo" required><br>
+                            <label style="color: white" for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" placeholder="JosephJoestar@gmail.com"
+                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                            <label style="color: white" for="phone">Phone number:</label><br>
+                            <input type="tel" id="phone" name="phone" placeholder="8(123)456-78-90" minlength="11"
+                                   maxlength="20"
+                                   pattern="/^+?\d{1,4}?[-.\s]?(?\d{1,3}?)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/"
+                                   required><br><br>
+                            <input id="registerInfo" type="submit" value="Submit">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -82,10 +86,12 @@
 <body>
 
 <header id="C1" style="display:flex;justify-content:center;gap:30px;margin-top: 10px;">
-    <img src="imgs/duck-spinning.gif" alt="Duck spinning" style="width:15vw; max-width: 100%; border: 2px solid rgb(167, 11, 11);">
+    <img src="imgs/duck-spinning.gif" alt="Duck spinning"
+         style="width:15vw; max-width: 100%; border: 2px solid rgb(167, 11, 11);">
     <h1 style="font-size:5vw;text-align:center; text-shadow: black 1px 1px 0">IntroDUCKtion
     </h1>
-    <img src="imgs/duck-spinning.gif" alt="Duck spinning" style="width:15vw; max-width: 100%; border: 2px solid rgb(167, 11, 11);">
+    <img src="imgs/duck-spinning.gif" alt="Duck spinning"
+         style="width:15vw; max-width: 100%; border: 2px solid rgb(167, 11, 11);">
 </header>
 
 <noscript style="font-size: 500px;color: white;">C'mon man go use regular browser or just... set <span
@@ -123,13 +129,15 @@
     </div>
     <div style="display:flex;flex-direction: column; justify-content:center; margin-bottom: 10px;margin-top: 10px; background-image: url('imgs/chernye-tuchi-v-pole.png')">
         <p id="C2" ; style="font-size:200%;text-align:center;margin-top: 0;margin-bottom: 0; border-bottom: none; border-right: none;
-        border-left: none; background: none; color: #fa5454; text-shadow: black 1px 1px 0">A short story about the binding of Jenireth</p>
+        border-left: none; background: none; color: #fa5454; text-shadow: black 1px 1px 0">A short story about the
+            binding of Jenireth</p>
         <picture style="text-align: center; ">
             <source id="modimg5" media="(min-width: 1600px)" srcset="imgs/Джениретт_Пробужденная.png" alt="5">
             <source id="modimg4" media="(min-width: 1200px)" srcset="imgs/Джениретт_Ишар.png" alt="4">
             <source id="modimg3" media="(min-width: 800px)" srcset="imgs/Магия_кровавого_тумана_Джениретт.png" alt="3">
             <source id="modimg2" media="(min-width: 564px)" srcset="imgs/Явление_Тона_Джениретт.png" alt="2">
-            <img id="modimg1" src="imgs/Становление_Джениретт_алой_святой.png" style="width:auto; max-width: 100%; text-align:center" alt="The beggining of Jenireth's path starts here.
+            <img id="modimg1" src="imgs/Становление_Джениретт_алой_святой.png"
+                 style="width:auto; max-width: 100%; text-align:center" alt="The beggining of Jenireth's path starts here.
             In this cold, dark and scary chamber. <br>
             The sacrament that makes a body to become a blood vessel of Ton, through the 'endless' mind and flash torture happened here.">
         </picture>
@@ -165,25 +173,26 @@
         </pre>
         <div style="display: flex; justify-content: center;">
             <audio controls>
-                     <source src="imgs/Jenereth.mp3" type="audio/mp3">
-                     <source src="imgs/Jenereth.ogg" type="audio/ogg">
-                     Your browser does not support the audio element.
+                <source src="imgs/Jenereth.mp3" type="audio/mp3">
+                <source src="imgs/Jenereth.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
             </audio>
         </div>
         <p style="font-size:2vw;text-align:center;margin-bottom: 0;margin-top: 0;border-top: none; border-left: none;border-right: none;
-        color: #fa5454; text-shadow: black 1px 1px 0;">Extend or squeeze the browser (or just use another device with different resolution)</p>
+        color: #fa5454; text-shadow: black 1px 1px 0;">Extend or squeeze the browser (or just use another device with
+            different resolution)</p>
     </div>
     <br>
     <br>
     <div style="text-align: center;flex-wrap: wrap; border: 2px ridge #00ffff; padding-bottom: 20px; background-image: url('imgs/chernye-tuchi-v-pole.png')">
-    <p style="color:#00ffff;background: none; border: none; text-align:center;font-size:200%; margin: 0">
-        A sip of League Of Legends
-    </p>
-    <video style="width: 520px; max-width: 100%; margin: 0;outline: 0.3vw outset #00ffff" controls autoplay muted>
-        <source src="imgs/Ekko.webm" type="video/webm">
-        <source src="imgs/Ekko.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-    </video>
+        <p style="color:#00ffff;background: none; border: none; text-align:center;font-size:200%; margin: 0">
+            A sip of League Of Legends
+        </p>
+        <video style="width: 520px; max-width: 100%; margin: 0;outline: 0.3vw outset #00ffff" controls autoplay muted>
+            <source src="imgs/Ekko.webm" type="video/webm">
+            <source src="imgs/Ekko.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
     <div id="C3" class="bookWW">
@@ -203,40 +212,40 @@
         <div style="border: solid #4d1900">
             <p style="margin: 1px;padding: 1px">A little quote from "Blackfur" book:</p>
             <blockquote cite="https://ficbook.net/readfic/8695531/22207116#part_content"
-                style="color:#000000; font-size: 30px">
-        Вернувшись к людям, великан понимал что вот-вот погибнет от страшных и
-        неизлечимых даже для такого гиганта ран. Его тело буквально разваливалось
-        на части. Забвение было самым страшным для него кошмаром, поэтому Тон
-        намеревался продолжить жить в своих потомках. Он подарил им широту мыслей
-        и знания, рассказал что такое искусство и развитие, а затем подарил два
-        ценнейших артефакта. Первым стала «Воля творения», а вторым
-        «Всепроникающий Хаос». Вскоре великан умер. На его костях была возведена
-        первая столица людей — Митонхолд, а день его смерти стал началом их
-        летоисчисления.
+                        style="color:#000000; font-size: 30px">
+                Вернувшись к людям, великан понимал что вот-вот погибнет от страшных и
+                неизлечимых даже для такого гиганта ран. Его тело буквально разваливалось
+                на части. Забвение было самым страшным для него кошмаром, поэтому Тон
+                намеревался продолжить жить в своих потомках. Он подарил им широту мыслей
+                и знания, рассказал что такое искусство и развитие, а затем подарил два
+                ценнейших артефакта. Первым стала «Воля творения», а вторым
+                «Всепроникающий Хаос». Вскоре великан умер. На его костях была возведена
+                первая столица людей — Митонхолд, а день его смерти стал началом их
+                летоисчисления.
             </blockquote>
             <p style="font-size: 30px;margin: 1px;padding: 10px">
-        Имя его меча таило в себе сокрыльный смысл, который герою ещё предстояло
-        разгадать:
-            <q style="font-size: 25px">"Энри'Аур'Ридил". -Что означает надпись? - спросил мальчик, всё ещё не
-            решаясь достать будто бы тянущийся к нему меч. -Кованая самим светом,
-            надпись гласит: "Сущность Двух Начал", - ответил Великий Пёс.</q>
+                Имя его меча таило в себе сокрыльный смысл, который герою ещё предстояло
+                разгадать:
+                <q style="font-size: 25px">"Энри'Аур'Ридил". -Что означает надпись? - спросил мальчик, всё ещё не
+                    решаясь достать будто бы тянущийся к нему меч. -Кованая самим светом,
+                    надпись гласит: "Сущность Двух Начал", - ответил Великий Пёс.</q>
             </p>
             <p style="font-size: 30px;margin: 1px;padding: 10px">Названный
                 <abbr title="Наследником живого пламени" style="font-size: 25px">
-            Дра`Фенри`ром</abbr>, Варвонд исполняет роль
+                    Дра`Фенри`ром</abbr>, Варвонд исполняет роль
                 <abbr title="охотника" style="font-size: 25px">избавителя от хаоса</abbr>
                 и проводника звериной силы.
             </p>
         </div>
         <br>
         <div id="C3,5" ; class="inka" style="border: inset rgb(73, 207, 162)">
-        <p
-                style="font-size: 5em;color:rgb(60, 158, 104); font-family:segoe script,serif;text-align:center;border: none; background-image: none;margin-top: 0;padding-top: 0;margin-bottom: 0;padding-bottom: 0;">
-            Inkaani Rayz -
-            The first human sorcerer
-        </p>
-        <pre class="inka" ;
-             style="word-break: break-all; max-width: 1400px;font-size: 1.3em; text-wrap: wrap;font-family:segoe print,serif;padding-inline: 1em; color:rgb(73, 207, 162);text-shadow: black 1px 1px 0;padding-bottom: 0;">
+            <p
+                    style="font-size: 5em;color:rgb(60, 158, 104); font-family:segoe script,serif;text-align:center;border: none; background-image: none;margin-top: 0;padding-top: 0;margin-bottom: 0;padding-bottom: 0;">
+                Inkaani Rayz -
+                The first human sorcerer
+            </p>
+            <pre class="inka" ;
+                 style="word-break: break-all; max-width: 1400px;font-size: 1.3em; text-wrap: wrap;font-family:segoe print,serif;padding-inline: 1em; color:rgb(73, 207, 162);text-shadow: black 1px 1px 0;padding-bottom: 0;">
        Рожденная под знаменем Морогвина, я не приняла судьбу бессильного бастарда и не стала мириться со слабостью человеческой души.
    Сколько лет понадобится телу, чтобы наконец раскрыть свой истинный потенциал?
        Годы моей прошлой и даже предстоявшей жизни были отданы на растерзание науки - тому загадочному и безудержно манящему открытию.
@@ -246,18 +255,18 @@
        Зачем каждое утро борюсь со своим телом, не позволяя ему рассыпаться в горстку мелкой блестящей крошки, а засыпая за своим прожжённым и покрывшимся налетом столом, без веры молю всех известных мне богов о скором пробуждении? Я отвечу.
        Пожалуй, отвечу на вопросы, что ты так и не решился мне задать. Дай мне свою руку, теперь я чувствую ту силу, к которой тянулось моё сердце.
         </pre>
-        <p
-                style="text-align: end;border: none;background-image: none;padding-top: 0;margin-top: 0;font-size: 1.3em; text-wrap: wrap;font-family:segoe print,serif;padding-inline: 1em; color:rgb(73, 207, 162);text-shadow: black 1px 1px 0;">
-            (c)
-        </p>
+            <p
+                    style="text-align: end;border: none;background-image: none;padding-top: 0;margin-top: 0;font-size: 1.3em; text-wrap: wrap;font-family:segoe print,serif;padding-inline: 1em; color:rgb(73, 207, 162);text-shadow: black 1px 1px 0;">
+                (c)
+            </p>
         </div>
         <br>
         <address class="sitelink" style="color: black; text-shadow: black 0.1px 0.1px 0">
-        Written by ElindiOwl.<br/>
-        Find me on:<br/>
+            Written by ElindiOwl.<br/>
+            Find me on:<br/>
             <a href="https://ficbook.net/authors/3296626">Ficbook.net</a><br/>
         </address>
-        <p  style="border: solid #4d1900;"><cite>Blackfur</cite> is still in progress</p>
+        <p style="border: solid #4d1900;"><cite>Blackfur</cite> is still in progress</p>
     </div>
     <h3 id="C4" ; style="font-size:30px;color:white;text-align:center;"
         title="Not too stylish but for a mechanical profit">
@@ -286,9 +295,10 @@
         </div>
     </div>
     <div style="max-width: 100%;margin-right: 100px">
-    <a style="transform: rotate(10deg);border-radius: 30px;" class="damn nudeanim" href="mailto:prostonaf@gmail.com">Send
-        <del>nudes</del>
-        stuff</a>
+        <a style="transform: rotate(10deg);border-radius: 30px;" class="damn nudeanim"
+           href="mailto:prostonaf@gmail.com">Nend
+            <del>Sudes</del>
+            msg</a>
     </div>
     <br>
     <br>
@@ -296,7 +306,8 @@
     <div style="display:flex;justify-content:center;">
         <a class="sitelink" href="https://youtu.be/viO0HmQhbU4?t=82" target="_blank">
             <button style="background-image: url('imgs/maxresdefault.png');border-radius: 300px">
-                <img style="border-image: url('imgs/maxresdefault.png'); border-radius: 200px;box-shadow: 0 0 80px 20px rgb(249,240,111);" src="imgs/maxresdefault.png" alt="def"/>
+                <img style="border-image: url('imgs/maxresdefault.png'); border-radius: 200px;box-shadow: 0 0 80px 20px rgb(249,240,111);"
+                     src="imgs/maxresdefault.png" alt="def"/>
             </button>
         </a>
     </div>
@@ -307,7 +318,8 @@
     <p class="bord" style="font-size:2em;color:rgb(141, 90, 23);text-align:center;background-image: none;">
         Some sword types:
     </p>
-    <p class="bord" style="font-size:0.8em;color:rgb(141, 90, 23);text-align:center;border: 0;margin: 0;padding: 0;background-image: none;">
+    <p class="bord"
+       style="font-size:0.8em;color:rgb(141, 90, 23);text-align:center;border: 0;margin: 0;padding: 0;background-image: none;">
         <ins>Tap</ins>
         on any
         <ins>weapon</ins>
@@ -476,11 +488,11 @@
             more
             information about swords on these fancy sites!</p>
         <div style="display:flex;justify-content:center;flex-wrap:wrap;">
-            <iframe src="https://oruzhejnaya.ru/tipologiya-mechey.html" style="border:none; height: 600px; width: 630px; max-width: 100%"
+            <iframe class="iframeSwords" src="https://oruzhejnaya.ru/tipologiya-mechey.html"
                     title="More sword types!"></iframe>
-            <iframe src="https://bsmith.ru/articles/swords" style="border:none; height: 600px; width: 643px; max-width: 100%"
+            <iframe class="iframeSwordWider" src="https://bsmith.ru/articles/swords"
                     title="More sword types!"></iframe>
-            <iframe src="" style="border:none;height: 600px; width: 630px; max-width: 100%"
+            <iframe class="iframeSwords" src="https://katanakami.ru/klassifikaciya-yaponskih-mechej"
                     title="More sword types!"></iframe>
         </div>
     </div>

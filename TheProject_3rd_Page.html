@@ -41,49 +41,40 @@
 </head>
 <body>
 <nav class="navbar">
-    <div style="z-index: 7" class="container">
-        <a href="file:///C:/Users/danie/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/httpsvscode.dev/TheProject.html"
+    <div class="container">
+        <a href="file:///C:/Users/danie/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/FrontendStudying/TheProject.html"
            class="navbar-brand">ELIN'WOODS</a>
-        <div class="navbar-wrap">
+        <div class="container">
             <div class="dropdown navlinks">
-                <button data-path="one" class="dropdown-toggle dropdown-button">
-                    Log in / Register
+                <button data-path="three" class="dropdown-toggle dropdown-button">
+                    Page Selection
                 </button>
-                <div data-target="one" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <form onclick="event.stopPropagation()" action="https://www.w3schools.com/action_page.php"
-                          target="_blank" method="post">
-                        <label style="color: white" for="fnick">Nickname:</label><br>
-                        <input type="text" id="fnick" name="fnick" placeholder="JoJo" required><br>
-                        <label style="color: white" for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" placeholder="JosephJoestar@gmail.com"
-                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                        <label style="color: white" for="phone">Phone number:</label><br>
-                        <input type="tel" id="phone" name="phone" placeholder="8(123)456-78-90"
-                               pattern="/^+?\d{1,4}?[-.\s]?(?\d{1,3}?)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/"
-                               required><br><br>
-                        <input type="submit" value="Submit">
-                    </form>
+                <div data-target="three" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a href="TheProject.html" class="dropdown-item">First Page</a>
+                    <a href="TheProject_2nd_Page.html" class="dropdown-item">Second Page</a>
+                    <a href="TheProject_3rd_Page.html" class="dropdown-item">Third Page</a>
+                    <a href="TheProject_4th_Page.html" class="dropdown-item">Fourth Page</a>
                 </div>
             </div>
-            <div class="container">
-                <div class="dropdown navlinks">
-                    <button data-path="two" class="dropdown-toggle dropdown-button">
-                        Page Navigation
+            <div class="navbar-wrap">
+                <div class="dropdown navlinks removeAfterRegister">
+                    <button data-path="one" class="dropdown-toggle dropdown-button">
+                        Duck in
                     </button>
-                    <div data-target="two" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a href="#" class="dropdown-item"></a>
-                    </div>
-                </div>
-
-                <div class="dropdown navlinks">
-                    <button data-path="three" class="dropdown-toggle dropdown-button">
-                        Page Selection
-                    </button>
-                    <div data-target="three" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a href="TheProject.html" class="dropdown-item">First Page</a>
-                        <a href="TheProject_2nd_Page.html" class="dropdown-item">Second Page</a>
-                        <a href="TheProject_3rd_Page.html" class="dropdown-item">Third Page</a>
-                        <a href="TheProject_4th_Page.html" class="dropdown-item">Fourth Page</a>
+                    <div data-target="one" class="dropdown-menu dropdown-menuReg" aria-labelledby="dropdownMenuButton" style="left: -210%">
+                        <form id="registerArea" onclick="event.stopPropagation()">
+                            <label style="color: white" for="fnick">Nickname:</label><br>
+                            <input type="text" id="fnick" name="fnick" placeholder="JoJo" required><br>
+                            <label style="color: white" for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" placeholder="JosephJoestar@gmail.com"
+                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                            <label style="color: white" for="phone">Phone number:</label><br>
+                            <input type="tel" id="phone" name="phone" placeholder="8(123)456-78-90" minlength="11"
+                                   maxlength="20"
+                                   pattern="/^+?\d{1,4}?[-.\s]?(?\d{1,3}?)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/"
+                                   required><br><br>
+                            <input id="registerInfo" type="submit" value="Submit">
+                        </form>
                     </div>
                 </div>
             </div>

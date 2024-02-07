@@ -1,6 +1,6 @@
 function hidemoron() {
-    var x = document.getElementsByClassName("hidemoron");
-    for (var i = 0; i < x.length; i++) {
+    let x = document.getElementsByClassName("hidemoron");
+    for (let i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
 }

@@ -34,10 +34,14 @@
     overflow: hidden;
     transition: all .4s ease-out;
 }
+
 @media screen and (max-width: 700px){
     .dropdown-menu {
         top: 105%;
         left: -5%;
+    }
+    .dropdown-menuReg {
+        left: -300% !important;
     }
 }
 .menu-active {

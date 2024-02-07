@@ -8,3 +8,30 @@ th, td {
 table {
     box-shadow: black 5px 5px 10px;
 }
+
+.iframeSwords {
+    border:none;
+    height: 600px;
+    width: 630px;
+    max-width: 100%
+}
+
+.iframeSwordWider {
+    border:none;
+    height: 600px;
+    width: 643px;
+    max-width: 100%
+}
+
+@media screen and (max-width: 650px) {
+    .iframeSwords {
+        width: 400px;
+        height: 600px;
+        max-width: none;
+    }
+    .iframeSwordWider {
+        width: 400px;
+        height: 600px;
+        max-width: none;
+    }
+}
