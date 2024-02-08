@@ -21,6 +21,7 @@
 
 .dropdown-button:hover {
     opacity: 1;
+    cursor: pointer;
 }
 .dropdown-menu {
     display: none;
@@ -35,6 +36,10 @@
     transition: all .4s ease-out;
 }
 
+.exit-menu {
+    padding: 8px !important;
+}
+
 @media screen and (max-width: 700px){
     .dropdown-menu {
         top: 105%;
@@ -42,6 +47,9 @@
     }
     .dropdown-menuReg {
         left: -300% !important;
+    }
+    .exit-menu {
+        left: -20% !important;
     }
 }
 .menu-active {
@@ -63,4 +71,20 @@
 }
 .dropdown-menu a:hover {
     opacity: 1;
+    cursor: pointer;
+}
+
+.buttonInMenu {
+    background-color: rgb(134, 9, 9);
+    border: none;
+    display:block;
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: all .7s ease-in-out;
+}
+
+.buttonInMenu:hover {
+    opacity: 1;
+    cursor: pointer;
 }

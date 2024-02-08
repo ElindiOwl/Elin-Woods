@@ -57,25 +57,27 @@
                     <a href="TheProject_4th_Page.html" class="dropdown-item">Fourth Page</a>
                 </div>
             </div>
-            <div class="navbar-wrap">
-                <div class="dropdown navlinks removeAfterRegister">
-                    <button data-path="one" class="dropdown-toggle dropdown-button">
-                        Duck in
-                    </button>
-                    <div data-target="one" class="dropdown-menu dropdown-menuReg" aria-labelledby="dropdownMenuButton" style="left: -210%">
-                        <form id="registerArea" onclick="event.stopPropagation()">
-                            <label style="color: white" for="fnick">Nickname:</label><br>
-                            <input type="text" id="fnick" name="fnick" placeholder="JoJo" required><br>
-                            <label style="color: white" for="email">Email:</label><br>
-                            <input type="email" id="email" name="email" placeholder="JosephJoestar@gmail.com"
-                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                            <label style="color: white" for="phone">Phone number:</label><br>
-                            <input type="tel" id="phone" name="phone" placeholder="8(123)456-78-90" minlength="11"
-                                   maxlength="20"
-                                   pattern="/^+?\d{1,4}?[-.\s]?(?\d{1,3}?)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/"
-                                   required><br><br>
-                            <input id="registerInfo" type="submit" value="Submit">
-                        </form>
+            <div class="removeAfterRegister">
+                <div class="navbar-wrap">
+                    <div class="dropdown navlinks">
+                        <button data-path="one" class="dropdown-toggle dropdown-button">
+                            Duck in
+                        </button>
+                        <div data-target="one" class="dropdown-menu dropdown-menuReg" aria-labelledby="dropdownMenuButton" style="left: -210%">
+                            <form id="registerArea" onclick="event.stopPropagation()">
+                                <label style="color: white" for="fnick">Nickname:</label><br>
+                                <input type="text" id="fnick" name="fnick" placeholder="JoJo" required><br>
+                                <label style="color: white" for="email">Email:</label><br>
+                                <input type="email" id="email" name="email" placeholder="JosephJoestar@gmail.com"
+                                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                                <label style="color: white" for="phone">Phone number:</label><br>
+                                <input type="tel" id="phone" name="phone" placeholder="8(123)456-78-90" minlength="11"
+                                       maxlength="20"
+                                       pattern="/^+?\d{1,4}?[-.\s]?(?\d{1,3}?)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/"
+                                       required><br><br>
+                                <input id="registerInfo" style="margin-bottom: 5px" class="buttonInMenu" type="submit" value="SUBMIT">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,7 +109,7 @@
         <a class="hidemoron" style="display:flex; justify-content: center;text-align: center"
            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">The link (click on me)</a>
         <div style="display:flex;justify-content:center;">
-            <input type="button" class="damn" style="background-color: #b42215;color:Seashell"
+            <input type="button" class="damn" style="background-color: #b42215;color:Seashell; cursor: pointer;"
                    onclick="hidemoron(); buttonClick(this)" value="^ Nevermind ^ just ^ hide this moron^">
 
         </div>
@@ -306,7 +308,7 @@
     <div style="display:flex;justify-content:center;">
         <a class="sitelink" href="https://youtu.be/viO0HmQhbU4?t=82" target="_blank">
             <button style="background-image: url('imgs/maxresdefault.png');border-radius: 300px">
-                <img style="border-image: url('imgs/maxresdefault.png'); border-radius: 200px;box-shadow: 0 0 80px 20px rgb(249,240,111);"
+                <img style="border-image: url('imgs/maxresdefault.png'); border-radius: 200px;box-shadow: 0 0 80px 20px rgb(249,240,111); cursor: pointer;"
                      src="imgs/maxresdefault.png" alt="def"/>
             </button>
         </a>

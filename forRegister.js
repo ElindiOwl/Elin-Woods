@@ -68,3 +68,8 @@ function sendRegisterData() {
         return await request.json();
     }
 }
+
+function deleteLocalStorageData() {
+    localStorage.removeItem("savedData");
+    location.reload();
+}

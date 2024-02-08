@@ -68,25 +68,27 @@
                     <a href="TheProject_4th_Page.html" class="dropdown-item">Fourth Page</a>
                 </div>
             </div>
-            <div class="navbar-wrap">
-                <div class="dropdown navlinks removeAfterRegister">
-                    <button data-path="one" class="dropdown-toggle dropdown-button">
-                        Duck in
-                    </button>
-                    <div data-target="one" class="dropdown-menu dropdown-menuReg" aria-labelledby="dropdownMenuButton" style="left: -210%">
-                        <form id="registerArea" onclick="event.stopPropagation()">
-                            <label style="color: white" for="fnick">Nickname:</label><br>
-                            <input type="text" id="fnick" name="fnick" placeholder="JoJo" required><br>
-                            <label style="color: white" for="email">Email:</label><br>
-                            <input type="email" id="email" name="email" placeholder="JosephJoestar@gmail.com"
-                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                            <label style="color: white" for="phone">Phone number:</label><br>
-                            <input type="tel" id="phone" name="phone" placeholder="8(123)456-78-90" minlength="11"
-                                   maxlength="20"
-                                   pattern="/^+?\d{1,4}?[-.\s]?(?\d{1,3}?)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/"
-                                   required><br><br>
-                            <input id="registerInfo" type="submit" value="Submit">
-                        </form>
+            <div class="removeAfterRegister">
+                <div class="navbar-wrap">
+                    <div class="dropdown navlinks">
+                        <button data-path="one" class="dropdown-toggle dropdown-button">
+                            Duck in
+                        </button>
+                        <div data-target="one" class="dropdown-menu dropdown-menuReg" aria-labelledby="dropdownMenuButton" style="left: -210%">
+                            <form id="registerArea" onclick="event.stopPropagation()">
+                                <label style="color: white" for="fnick">Nickname:</label><br>
+                                <input type="text" id="fnick" name="fnick" placeholder="JoJo" required><br>
+                                <label style="color: white" for="email">Email:</label><br>
+                                <input type="email" id="email" name="email" placeholder="JosephJoestar@gmail.com"
+                                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                                <label style="color: white" for="phone">Phone number:</label><br>
+                                <input type="tel" id="phone" name="phone" placeholder="8(123)456-78-90" minlength="11"
+                                       maxlength="20"
+                                       pattern="/^+?\d{1,4}?[-.\s]?(?\d{1,3}?)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/"
+                                       required><br><br>
+                                <input id="registerInfo" style="margin-bottom: 5px" class="buttonInMenu" type="submit" value="SUBMIT">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -165,7 +167,7 @@
                     </div>
                 </div>
                 <img id="drag1" src="imgs/Peas.png" alt="Peasant" draggable="true" ondragstart="drag(event)"
-                     style="width: 448px; height: 150px; max-width: 100%">
+                     style="width: 448px; height: 150px; max-width: 100%; cursor: pointer">
                 <div>
                     <h2 style="background: none;font-size:20px;color:rgb(199,232,245);text-align:center;"
                         title="actually another paragraph">
@@ -435,7 +437,7 @@
         </article>
         <aside class="sec-side">
             <div id="C4" style="display:flex; justify-content: center; align-items: baseline;">
-                <button type="button" onclick="changetext()">On me</button>
+                <button type="button" onclick="changetext()" style="cursor: pointer">On me</button>
                 <p style="border: none;background:none" id="tryme">Sup</p>
             </div>
             <div style="display: flex; justify-content: center">
@@ -443,8 +445,8 @@
                     him cook:
                     <output style="font-family: Audiowide,sans-serif" class="font-effect-neon" id="resulta"></output>
                 </p>
-                <button style="align-self: center" onclick="startWorker()">Go</button>
-                <button style="align-self: center" onclick="stopWorker()">Rude</button>
+                <button style="align-self: center; cursor: pointer" onclick="startWorker()">Go</button>
+                <button style="align-self: center; cursor: pointer" onclick="stopWorker()">Rude</button>
             </div>
             <div style="display: flex; flex-direction: column;align-items: center">
                 <div>
@@ -454,8 +456,8 @@
                     <img alt="bulb" id="Bulbie" src="imgs/pic_bulboff.gif" style="width: 100px;height: 100px">
                 </div>
                 <div style="margin-right: 60px;margin-bottom: 15px;">
-                    <button style="width: 50px" type="button" onclick="light(1)">Light On</button>
-                    <button style="width: 50px" type="button" onclick="light(0)">Light Off</button>
+                    <button style="width: 50px; cursor: pointer" type="button" onclick="light(1)">Light On</button>
+                    <button style="width: 50px; cursor: pointer" type="button" onclick="light(0)">Light Off</button>
                 </div>
             </div>
             <br>
@@ -482,7 +484,7 @@
             <div style="display: flex; align-items: center; flex-direction: column">
                 <p style="border: none; background: none; margin: 0;padding: 5px; font-size: 30px; color: #e58590; text-shadow: black 1px 1px 0">
                     Now you face the horror:</p>
-                <button class="hid totooltip" style="margin: 0;background-color: #262633;color: #e58590"
+                <button class="hid totooltip" style="margin: 0;background-color: #262633;color: #e58590; cursor: pointer"
                         onclick="getlocation()">
                     Geolocation
                     <span class="totooltiptext">Don't worry your data is not being send anywhere</span>
@@ -501,7 +503,7 @@
                 <div style="background-color: #696969" id="div2" ondrop="drop(event)"
                      ondragover="allowDrop(event)"></div>
                 <img id="drag2" src="imgs/Artas.png" alt="Artas" draggable="true" ondragstart="drag(event)"
-                     style="width: 448px; height: 150px; max-width: 100%;">
+                     style="width: 448px; height: 150px; max-width: 100%; cursor: pointer">
                 <br>
             </div>
             <br>

@@ -1,8 +1,7 @@
-<div style="left: -3px; top: -3px" class="dropdown navlinks">
-  <button id="fnickAfterRegister" style="left: -10px" data-path="three" class="dropdown-toggle dropdown-button">
-  </button>
-  <div data-target="three" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-<p>123</p>
-    <button style="" id="exit">Exit</button>
-  </div>
-</div>
+<div onclick="demandDropDownFunction()" class="dropdown navlinks">
+                <button id="fnickAfterRegister" style="left: -10px" data-path="four" class="dropdown-toggle dropdown-button">
+                </button>
+                <div data-target="four" class="dropdown-menu exit-menu" aria-labelledby="dropdownMenuButton">
+                    <button class="buttonInMenu" onclick="deleteLocalStorageData()">EXIT</button>
+                </div>
+            </div>
