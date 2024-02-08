@@ -1,77 +1,50 @@
 function demandDropDownFunction() {
-    let intervalid;
+    const toggleMenus = new Map(); // To store toggle menu pairs
 
-    document.querySelectorAll('.dropdown-toggle').forEach(e => {
-        forDropDownMenu(e);
-    });
+    document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+        const menu = document.querySelector(`[data-target=${toggle.dataset.path}]`);
 
-    function forDropDownMenu(toggle) {
+        // Store toggle-menu pair
+        toggleMenus.set(toggle, menu);
+
         toggle.addEventListener('click', e => {
-            const menu = e.currentTarget.dataset.path;
-            document.querySelectorAll('.dropdown-menu').forEach(e => {
-                if (!document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
-                    e.classList.remove('menu-active');
-                    e.classList.remove('open');
-                    document.querySelector(`[data-target=${menu}]`).classList.add('menu-active');
-                    intervalid = setTimeout(() => {
-                        document.querySelector(`[data-target=${menu}]`).classList.add('open');
-                    }, 0);
-                }
+            e.stopPropagation(); // Prevent propagation to document click handler
+            const targetMenu = toggleMenus.get(toggle);
 
-                if (document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
-                    clearTimeout(intervalid);
-                    document.querySelector(`[data-target=${menu}]`).classList.remove('menu-active');
-                    intervalid = setTimeout(() => {
-                        document.querySelector(`[data-target=${menu}]`).classList.remove('open');
-                    }, 0);
-                }
-
-                window.onclick = e => {
-                    if (e.target == document.querySelector(`[data-target=${menu}]`) || e.target == document.querySelector(`[data-path=${menu}]`)) {
-                        return;
-                    }
-                    document.querySelector(`[data-target=${menu}]`).classList.remove('menu-active');
-                    document.querySelector(`[data-target=${menu}]`).classList.remove('open');
-                }
+            toggleMenus.forEach((menu, toggle) => {
+                menu.classList.remove('menu-active');
+                setTimeout(() => {
+                    menu.classList.remove('open');
+                }, 0);
             });
-        });
-    }
-}
 
-let intervalid;
-
-document.querySelectorAll('.dropdown-toggle').forEach(e => {
-    forDropDownMenu(e);
-});
-
-function forDropDownMenu(toggle) {
-    toggle.addEventListener('click', e => {
-        const menu = e.currentTarget.dataset.path;
-        document.querySelectorAll('.dropdown-menu').forEach(e => {
-            if (!document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
-                e.classList.remove('menu-active');
-                e.classList.remove('open');
-                document.querySelector(`[data-target=${menu}]`).classList.add('menu-active');
-                intervalid = setTimeout(() => {
-                    document.querySelector(`[data-target=${menu}]`).classList.add('open');
+            if (!targetMenu.classList.contains('open')) {
+                targetMenu.classList.add('menu-active');
+                setTimeout(() => {
+                    targetMenu.classList.add('open');
                 }, 0);
-            }
-
-            if (document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
-                clearTimeout(intervalid);
-                document.querySelector(`[data-target=${menu}]`).classList.remove('menu-active');
-                intervalid = setTimeout(() => {
-                    document.querySelector(`[data-target=${menu}]`).classList.remove('open');
+            } else {
+                targetMenu.classList.remove('menu-active');
+                setTimeout(() => {
+                    targetMenu.classList.remove('open');
                 }, 0);
-            }
-
-            window.onclick = e => {
-                if (e.target == document.querySelector(`[data-target=${menu}]`) || e.target == document.querySelector(`[data-path=${menu}]`)) {
-                    return;
-                }
-                document.querySelector(`[data-target=${menu}]`).classList.remove('menu-active');
-                document.querySelector(`[data-target=${menu}]`).classList.remove('open');
             }
         });
     });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', e => {
+        const clickedElement = e.target;
+        toggleMenus.forEach((menu, toggle) => {
+            if (toggle === clickedElement || menu.contains(clickedElement)) {
+                return;
+            }
+            menu.classList.remove('menu-active');
+            setTimeout(() => {
+                menu.classList.remove('open');
+            }, 0);
+        });
+    });
 }
+
+demandDropDownFunction();
