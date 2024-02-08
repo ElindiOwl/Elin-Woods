@@ -23,7 +23,7 @@ function replaceAfterRegister(name) {
         .then(x => x.text())
         .then(y => {
             removeAfterRegister.innerHTML = y
-            const addNick = removeAfterRegister.querySelector("#nickName");
+            const addNick = removeAfterRegister.querySelector("#fnickAfterRegister");
             addNick.innerHTML = name;
         });
 }
@@ -64,12 +64,6 @@ function sendRegisterData() {
         if (!request.ok) {
             throw new Error(`Could not fetch ${url}, status: ${request.status}`);
         }
-
-        const removeAfterRegister = document.querySelector(".removeAfterRegister");
-        let afterLog = "JavaScriptTraining/forRegisterDUCK.txt";
-        fetch(afterLog)
-            .then(x => x.text())
-            .then(y => removeAfterRegister.innerHTML = y);
 
         return await request.json();
     }

@@ -1,5 +1,5 @@
 <div style="left: -3px; top: -3px" class="dropdown navlinks">
-  <button id="nickName" style="left: -10px" data-path="three" class="dropdown-toggle dropdown-button">
+  <button id="fnickAfterRegister" style="left: -10px" data-path="three" class="dropdown-toggle dropdown-button">
   </button>
   <div data-target="three" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 <p>123</p>
