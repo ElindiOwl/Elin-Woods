@@ -1988,7 +1988,7 @@ function stopWorker() {
 }
 
 
-getText("/JavaScriptTraining/forFetch.txt");
+/*getText("/JavaScriptTraining/forFetch.txt");
 
 async function getText(file) {
     let forFetchObject = await fetch(file);
@@ -1998,7 +1998,7 @@ async function getText(file) {
 let file = "/JavaScriptTraining/forFetch.txt";
 fetch(file)
     .then(x => x.text())
-    .then(y => document.getElementById("arrowFuncFetchAPI").innerHTML = y);
+    .then(y => document.getElementById("arrowFuncFetchAPI").innerHTML = y);*/
 
 
 function loadDocumentWithAJAX() {
