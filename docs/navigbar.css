@@ -1,0 +1,91 @@
+.navbar {
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+    z-index: 100;
+}
+
+.navbar .container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    display: inline-block;
+}
+
+.navbar-menu li a {
+    display: inline-block;
+    color: white;
+    background-color: rgb(134, 9, 9);
+    border: 2px solid black;
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 10px;
+    transition: all .7s ease-in-out;
+}
+
+.navbar-menu li a:hover {
+    opacity: 1;
+}
+
+.navbar-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.navlinks {
+    margin-left: 1px;
+    padding-top: 5px;
+    margin-right: 1px;
+    transition: all .5s ease-out;
+}
+
+.navlinks:hover {
+    transform: scale(1.04);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    color: rgb(255, 72, 0);
+    transition: all .9s ease-in-out;
+    margin-left: 15px;
+}
+
+.navbar-brand:hover {
+    color: rgb(87, 5, 5);
+    transition: all .9s ease-in-out;
+}
+.navbar_fixed {
+    width: 100%;
+    position: fixed;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+    left: 0;
+    background-color: rgb(37, 2, 2);
+    animation-name: havbar;
+    animation-duration: .2;
+    transition: all .7s ease-in-out;
+}
+@keyframes havbar{
+    0%{
+        opacity: 0;
+        top: -100px;
+        transition: all .7s ease-in-out;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+        transition: all .7s ease-in-out;
+    }
+}

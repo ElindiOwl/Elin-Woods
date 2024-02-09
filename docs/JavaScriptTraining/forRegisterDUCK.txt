@@ -1,0 +1,7 @@
+<div onclick="demandDropDownFunction()" class="dropdown navlinks">
+                <button id="fnickAfterRegister" style="left: -10px" data-path="four" class="dropdown-toggle dropdown-button">
+                </button>
+                <div data-target="four" class="dropdown-menu exit-menu" aria-labelledby="dropdownMenuButton">
+                    <button class="buttonInMenu" onclick="deleteLocalStorageData()">EXIT</button>
+                </div>
+            </div>

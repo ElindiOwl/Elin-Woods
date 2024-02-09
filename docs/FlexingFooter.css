@@ -1,0 +1,99 @@
+.flex-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-footer > div {
+    text-align: center;
+    font-size: 30px;
+}
+
+.pigga img {
+    width: 700px;
+    max-width: 100%;
+    flex-grow: 5;
+}
+
+.pigga {
+    flex-grow: 5;
+    flex-basis: 150px;
+}
+
+.spec {
+    flex-grow: 1;
+    flex-basis: 70px;
+}
+
+.butters {
+    align-self: self-end;
+    max-width: 100%;
+    flex-grow: 1;
+    flex-basis: 70px;
+}
+
+.butters a {
+    font-size: 30px;
+    margin: 1px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .flex-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pigga {
+        order: 1;
+    }
+    .pigga img {
+        width: 450px;
+        max-width: 100%;
+        flex-grow: 5;
+    }
+    .spec {
+        order: 2;
+    }
+
+    .butters {
+        order: 3;
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        flex-basis: 0;
+    }
+    .butters a {
+        font-size: 30px;
+    }
+    .buters {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.buters {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.buters li {
+    display: block;
+}
+
+.buters li a {
+    display: block;
+    color: white;
+    background-color: rgb(134, 9, 9);
+    border: 2px solid black;
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 10px;
+    transition: all .7s ease-in-out;
+}
+
+.buters li a:hover {
+    opacity: 1;
+}

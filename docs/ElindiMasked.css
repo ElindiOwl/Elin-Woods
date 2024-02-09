@@ -1,0 +1,49 @@
+.elindi {
+    -webkit-mask-image: url(imgs/circle.png);
+    mask-image: url(imgs/circle.png);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: 10% 50%;
+    -webkit-mask-size: 60px;
+    z-index: 2;
+}
+.elimg {
+    width: 130px;
+    height: 90px;
+    object-fit: cover;
+    object-position: -20px -7px;
+    z-index: 1;
+}
+.elsvg {
+    position: absolute;
+    left: 45px;
+    top: 55px;
+    z-index: 3;
+}
+.eltext {
+    position: absolute;
+    z-index: 3;
+    color: rgba(255, 255, 255, 0.87);
+    font-family: gg sans, serif;
+    font-weight: 100;
+    font-size: 20px;
+    left: 75px;
+    top: 2px;
+}
+.eltext2 {
+    position: absolute;
+    z-index: 3;
+    color: rgba(255,255,255,0.66);
+    font-family: gg sans, serif;
+    font-weight: 100;
+    font-size: 18px;
+    width: 100px;
+    left: 75px;
+    top: 33px;
+}
+.elsrc {
+    flex-flow: row nowrap;
+    opacity: 0.8;
+}
+.elsrc:hover {
+    opacity: 1;
+}

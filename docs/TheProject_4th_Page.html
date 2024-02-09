@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="eng" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+    <title>Elindi's education zone</title>
+    <link rel="stylesheet" href="LinkStyle.css"/>
+    <link rel="stylesheet" href="RedStyledButtons.css"/>
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="bord.css"/>
+    <link rel="stylesheet" href="inka.css"/>
+    <link rel="stylesheet" href="tables.css"/>
+    <link rel="stylesheet" href="navmenu.css">
+    <link rel="stylesheet" href="navigbar.css"/>
+    <link rel="stylesheet" href="upward.css"/>
+    <link rel="stylesheet" href="BlackfurMusic.css"/>
+    <link rel="stylesheet" href="Footer.css"/>
+    <link rel="stylesheet" href="DrugOrDrag.css"/>
+    <link rel="stylesheet" href="Cookie.css"/>
+    <link rel="stylesheet" href="2ndtextfont.css">
+    <link rel="stylesheet" href="2boxes.css">
+    <link rel="stylesheet" href="jumpscare.css">
+    <link rel="stylesheet" href="focfocus.css">
+    <link rel="stylesheet" href="List+media.css">
+    <link rel="stylesheet" href="smalltobig.css">
+    <link rel="stylesheet" href="gallerka.css">
+    <link rel="stylesheet" href="Form.css">
+    <link rel="stylesheet" href="3rdStylesheet.css">
+    <link rel="stylesheet" href="3rd_Page_Imgsinimgs.css">
+    <link rel="stylesheet" href="MyPhoto.css">
+    <link rel="stylesheet" href="ElindiMasked.css">
+    <link rel="stylesheet" href="4thStyleSheet.css">
+    <link rel="stylesheet" href="pagination.css">
+    <link rel="stylesheet" href="Image_Grid.css">
+    <link rel="stylesheet" href="forCDTable.css">
+    <link rel="stylesheet" href="JavaScriptTraining/forAnimation.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+</head>
+<nav class="navbar">
+    <div class="container" style="background-color: #808eb4">
+        <a href="file:///C:/Users/danie/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/FrontendStudying/TheProject.html"
+           class="navbar-brand">ELIN'WOODS</a>
+        <div class="container" style="background-color: #808eb4; padding-top: 0">
+            <div class="navbar-wrap">
+                <div class="dropdown navlinks">
+                    <button data-path="two" style="background-color: #173a9a" class="dropdown-toggle dropdown-button">
+                        Page Navigation
+                    </button>
+                    <div data-target="two" style="background-color: #173a9a" class="dropdown-menu"
+                         aria-labelledby="dropdownMenuButton">
+                        <a href="#C1" class="dropdown-item">Base</a>
+                        <a href="#C2" class="dropdown-item">Objects</a>
+                        <a href="#C3" class="dropdown-item">Functions</a>
+                        <a href="#C4" class="dropdown-item">Classes</a>
+                        <a href="#C5" class="dropdown-item">Async</a>
+                        <a href="#C6" class="dropdown-item">HTML DOM</a>
+                        <a href="#C7" class="dropdown-item">Browser BOM</a>
+                        <a href="#C8" class="dropdown-item">Web APIs</a>
+                        <a href="#C9" class="dropdown-item">AJAX</a>
+                        <a href="#C10" class="dropdown-item">JSON</a>
+                        <a href="#C11" class="dropdown-item">Graphics</a>
+                    </div>
+                </div>
+                <div class="dropdown navlinks">
+                    <button data-path="three" style="background-color: #173a9a" class="dropdown-toggle dropdown-button">
+                        Page Selection
+                    </button>
+                    <div data-target="three" style="background-color: #173a9a" class="dropdown-menu"
+                         aria-labelledby="dropdownMenuButton">
+                        <a href="TheProject.html" class="dropdown-item">First Page</a>
+                        <a href="TheProject_2nd_Page.html" class="dropdown-item">Second Page</a>
+                        <a href="TheProject_3rd_Page.html" class="dropdown-item">Third Page</a>
+                        <a href="TheProject_4th_Page.html" class="dropdown-item">Fourth Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<body onload="checkAreCookiesEndabled()">
+
+<div class="container">
+    <div>
+        <h2>Here we are dealing with JS code features</h2>
+        <p>This page is made to store all JS code I learned. It is not about css but you can interact with some features
+            and see the result</p>
+        <p style="font-size: 20px">oh and there is an image grid on the bottom!</p>
+    </div>
+    <br>
+    <div class="none">
+        <button type="button" onclick="Funkie_get()">Show what variable is set right now</button>
+        <button type="button" onclick="Funkie_set()">Change variable</button>
+    </div>
+</div>
+<br>
+
+<div>
+    <div id="C1">
+        <p style="font-size: 30px; ">Base</p>
+        <p id="plus"></p>
+        <script>
+            document.write(5 + 6);
+        </script>
+        <br>
+        <button type="button" onclick="document.write(23 + 78)">If you press it everything will be overwritten so it's
+            used
+            for testing
+        </button>
+        <script>
+            console.log(15 + 19);
+        </script>
+        <div>
+            <p>Printing appears to be so easy</p>
+            <button type="button" id="print">Just press the button to print the page</button>
+        </div>
+        <p id="summation"></p>
+        <p id="endadd"></p>
+        <p id="elems"></p>
+        <p id="car"></p>
+        <p id="+="></p>
+        <p id="-="></p>
+        <p id="empty"></p>
+        <p id="funca"></p>
+        <p id="funca2"></p>
+        <p id="converting"></p>
+        <br>
+        <p id="Object"></p>
+        <p id="magic"></p>
+        <div>
+            <p id="repla">"For the example, one
+                of the following experiments of combining my own blood with the Great Hedgehog's plasma amalgam"</p>
+            <button onclick="repl()">Continue the monolog</button>
+        </div>
+        <div>
+            <p id="replo">The blood magic is cruel.
+                It's not like in those Sangine knight's books where he writes about blood-thirsty monsters etc,
+                but the blood magic itself
+                requires a caster's suffering and the supply replenishment you know what I mean.</p>
+            <button onclick="repli()">Change the theme (dabble tap to see the efford)</button>
+        </div>
+        <p id="replosearch"></p>
+        <p id="reploinc"></p>
+        <p id="nam"></p>
+        <br>
+        <p id="templ"></p>
+        <p id="price"></p>
+        <br>
+        <P id="nan"></P>
+        <P id="ifnan"></P>
+        <p id="typnan"></p>
+        <p id="infinit"></p>
+        <p id="zerinfinit"></p>
+        <p id="zerinfinittyp"></p>
+        <br>
+        <p id="tostring"></p>
+        <p id="numbr"></p>
+        <div>
+            <p id="numdateexp"></p>
+            <p id="numdate"></p>
+        </div>
+        <p id="parse"></p>
+        <p id="isinteg"></p>
+        <p id="issafeinteg"></p>
+        <p id="issafeintegannot"></p>
+        <br>
+        <div>
+            <p id="fruits"></p>
+            <p id="justfruits"></p>
+            <p id="joinfruits"></p>
+            <p id="fruitsfkoff"></p>
+            <p id="fruitsfkoffresult"></p>
+            <p id="fruitsfirstfkoff"></p>
+            <p id="fruitsfirstfkoffresult"></p>
+            <p id="fruitsplusstart"></p>
+        </div>
+        <br>
+        <div>
+            <p id="arrayofarrays"></p>
+            <p id="arradesc"></p>
+            <p id="arrayofarrays2"></p>
+            <p id="arrtype"></p>
+            <p id="arrisarr"></p>
+            <p id="instofarr"></p>
+            <p id="arrleng"></p>
+        </div>
+        <p id="flatarr"></p>
+        <p id="splice"></p>
+        <p id="slice"></p>
+        <br>
+        <div>
+            <p id="alphanames"></p>
+            <p id="sortedalphanames"></p>
+            <p id="sortedalphanamesreversed"></p>
+            <br>
+            <p id="nums"></p>
+            <p id="wrongnumsort"></p>
+            <p id="rightnumsort"></p>
+            <p id="rightnumsortdecrease"></p>
+            <p>The lowest number: <span id="wrongnumsortslowest"></span></p>
+            <p>Or this way: <span id="numsortMin"></span></p>
+            <p>And JS method: <span id="JsmethodMin"></span></p>
+            <p>The highest number: <span id="wrongnumsortshighest"></span></p>
+            <p>Or this way: <span id="numsortMax"></span></p>
+            <p>And JS method: <span id="JsmethodMax"></span></p>
+            <div>
+                <button onclick="randomsortfunction()">Random</button>
+                <p id="randomnumsort"></p>
+            </div>
+            <div>
+                <button onclick="FisherYatesrandommethod()">The Fisher Yates Method</button>
+                <p id="FisherYatesrandommethod"></p>
+            </div>
+        </div>
+        <br>
+        <div>
+            <p id="agessort"></p>
+            <button onclick="agescomplexsort()">Sort objects on type(string length)</button>
+        </div>
+        <br>
+        <div>
+            <p id="stableSort"></p>
+            <p id="arrayone"></p>
+            <p id="arraymap"></p>
+            <p id="arrayflatmap"></p>
+            <p id="arrayfilter"></p>
+            <p id="arrayevery"></p>
+            <p id="arraysome"></p>
+            <p id="arrayfind"></p>
+            <p id="arrayFindIndex"></p>
+            <p id="arraysum"></p>
+            <p id="arraysumplusvalue"></p>
+        </div>
+        <br>
+        <div>
+            <p id="weaponlist"></p>
+            <p id="weaponlistpos"></p>
+            <p id="weaponlistposlast"></p>
+            <p id="weaponListFrom"></p>
+            <p id="weaponListKeys"></p>
+            <p id="weaponListEntries"></p>
+            <p id="weaponListIncludes"></p>
+        </div>
+        <br>
+        <p id="months"></p>
+        <p id="date"></p>
+        <p id="dateTillHour"></p>
+        <p id="date20thSent"></p>
+        <p id="dateUTC"></p>
+        <p id="dateISO"></p>
+        <p id="milisAfter1970"></p>
+        <p id="datefrommilis"></p>
+        <br>
+        <div>
+            <p id="fullYear"></p>
+            <p id="getMonth"></p>
+            <p id="getDate"></p>
+            <p id="getHours"></p>
+            <p id="getMinutes"></p>
+            <p id="getDay"></p>
+            <p id="getTime"></p>
+            <p id="getTimeZoneOffset"></p>
+            <p id="getFull"></p>
+        </div>
+        <br>
+        <div>
+            <p id="arrayGetMonth"></p>
+            <p id="arrayGetDay"></p>
+            <p id="dateCalculation"></p>
+            <p id="setTime"></p>
+            <p id="modifySetTime"></p>
+            <p id="compareSetTime"></p>
+        </div>
+        <br>
+        <div>
+            <p id="mathConstants"></p>
+        </div>
+        <br>
+        <div>
+            <p id="round"></p>
+            <p id="ceil"></p>
+            <p id="floor"></p>
+            <p id="trunc"></p>
+            <p id="sign"></p>
+            <p id="pow"></p>
+            <p id="sqrt"></p>
+            <p id="abs"></p>
+        </div>
+        <br>
+        <div>
+            <p id="sin"></p>
+            <p id="cos"></p>
+            <p id="min"></p>
+            <p id="max"></p>
+            <p id="random"></p>
+            <p id="randomWithFloor"></p>
+            <p id="randomWithFloorExtended"></p>
+            <p id="randomWithFloorExtendedBigger"></p>
+            <div>
+                <button onclick="showResult()">Random</button>
+                <p id="properRandomFunction"></p>
+            </div>
+            <p id="log"></p>
+            <p id="log2"></p>
+            <p id="log10"></p>
+        </div>
+        <br>
+        <div>
+            <label for="age">Alcohol buy permission. Enter your age:</label>
+            <br><input id="age" value=""/>
+            <button onclick="ageBuyCheck()">Check</button>
+            <p id="ageCheck"></p>
+        </div>
+        <br>
+        <p id="nullishCoalescing"></p>
+        <p id="optionalChaining"></p>
+        <p id="ifPlusElse"></p>
+        <p id="elseIf"></p>
+        <p id="switch"></p>
+        <p id="default"></p>
+        <div>
+            <form action="">
+                <label for="cast">How much mana do you have?</label><select id="cast">
+                <option>250</option>
+                <option>500</option>
+                <option>750</option>
+                <option>1000</option>
+            </select>
+            </form>
+            <button onclick="enoughManaCheck()">Try to cast</button>
+            <p id="manaCheck"></p>
+        </div>
+        <p id="explaining"></p>
+        <br>
+        <div>
+            <p id="loop"></p>
+            <p id="varBeforeLoopI"></p>
+            <p id="varInLoop"></p>
+            <p id="varInLoopI"></p>
+            <p id="letBeforeLoopI"></p>
+            <p id="letInLoop"></p>
+            <p id="letInLoopI"></p>
+        </div>
+        <br>
+        <div>
+            <p id="ForInLoop"></p>
+            <p>use forEach instead of ForIn then the order is important</p>
+            <p id="ForEachFunction"></p>
+        </div>
+        <div>
+            <p id="forOfLoop"></p>
+            <p id="forOfStringLoop"></p>
+        </div>
+        <div>
+            <p id="WhileLoop"></p>
+            <br>
+            <p id="DoWhileLoop"></p>
+            <br>
+            <p id="LoopBreak"></p>
+            <br>
+            <p id="LoopContinue"></p>
+            <br>
+            <p id="breakList"></p>
+        </div>
+        <br>
+        <div>
+            <p id="setFromArray"></p>
+            <p id="setValues"></p>
+            <p id="setAddValues"></p>
+            <p id="setAddVariablesAndValues"></p>
+            <p id="setAddMoreValues"></p>
+            <p id="setForEachAndForOf"></p>
+            <p id="setEntries"></p>
+        </div>
+        <br>
+        <div>
+            <p id="iterateOverMap"></p>
+            <p id="changedMapValues"></p>
+            <p id="getMapValue"></p>
+            <p id="mapDeletedValue"></p>
+            <p id="mapEntries"></p>
+            <p id="mapForEach"></p>
+        </div>
+        <br>
+        <div>
+            <p id="typeOf"></p>
+            <p id="isArray"></p>
+            <p id="undefinedAndNullComparison"></p>
+            <p id="instanceOf"></p>
+        </div>
+        <br>
+        <div>
+            <p id="convertingToNumber"></p>
+            <p id="stringToNumberPlusOperator"></p>
+            <p id="convertingToString"></p>
+            <p id="convertingAuto"></p>
+        </div>
+        <br>
+        <div>
+            <p id="search"></p>
+            <p id="caseSensitiveSearch"></p>
+            <br>
+            <p id="replace"></p>
+            <p id="caseSensitiveReplace"></p>
+            <p id="allSearch"></p>
+            <p id="globalRactSearch"></p>
+            <p id="globalAlternativesSearch"></p>
+            <p id="SearchAndReplaceModifiers"></p>
+            <p>A-well now, everybody's heard about the bird</p>
+            <p id="testSearch"></p>
+            <p id="execSearch"></p>
+        </div>
+        <br>
+        <div>
+            <p id="catchError"></p>
+            <p id="customError"></p>
+            <br>
+            <div>
+                <p>guess the number!</p>
+                <input id="customErrorWithInput" type="text">
+                <button type="button" onclick="CustomError()">Test it</button>
+                <p id="testText"></p>
+            </div>
+            <div>
+                <input id="predefinedInput" type="number" min="5" max="10" step="1">
+                <button type="button" onclick="finallyError()">doesn't matter</button>
+                <p id="finallyText"></p>
+                <p id="alwaysWas"></p>
+            </div>
+            <br>
+            <div>
+                <p id="thisInMethod"></p>
+                <p id="thisAlone"></p>
+                <p id="thisDefaultBindingInFunction"></p>
+                <button onclick="this.style.display='none'">Click to Remove</button>
+                <p id="thisToConstNameObject"></p>
+                <p id="thisCall"></p>
+                <p id="thisBind"></p>
+            </div>
+            <div>
+                <p id="arrowFunction"></p>
+                <p id="anotherArrowFunction"></p>
+                <p id="oneStatementArrowFunction"></p>
+                <p id="arrowFunctionWithParameter"></p>
+                <br>
+                <div>
+                    <p>At the beginning 'this' executes window's 'hello' function cause of the 'eventListener'</p>
+                    <button id="button">Check</button>
+                    <p id="thisAndEventListener"></p>
+                    <p>but after pressing the button 'this' executes button's 'hello' function cause of the other
+                        'eventListener'</p>
+                </div>
+                <br>
+                <div>
+                    <p class="toFindinDOM">in Arrow Functions, the 'this' keyword represents the object that owns the
+                        function, no matter who
+                        calls the function.</p>
+                    <button class="toFindinDOM" id="buttn">Check x2</button>
+                    <p id="thisAndEventListenerArrowFunction"></p>
+                    <p class="toFindinDOM">So event after pressing the button 'this' still represents the owner of the
+                        function and not the
+                        caller</p>
+                </div>
+            </div>
+            <br>
+            <div>
+                <p>Class is a template, not an object</p>
+                <p id="classes"></p>
+                <p id="classMethod"></p>
+                <p id="classMethodSendParameter"></p>
+            </div>
+            <br>
+            <div>
+                <p id="objectToArray"></p>
+                <p id="objectToStringWithJSON"></p>
+                <p id="nestedObjectsAndArraysMethod"></p>
+            </div>
+            <br>
+            <div>
+                <p id="impAndExpNam"></p>
+                <script type="module">
+                    import {wwBook} from "/JavaScriptTraining/exportMessage.js";
+
+                    document.getElementById("impAndExpNam").innerHTML = "The name of the book is " + wwBook;
+                </script>
+                <p id="impAndExpDefault"></p>
+                <script type="module">
+                    import messagero from "/JavaScriptTraining/exportMessage2.js";
+
+                    document.getElementById("impAndExpDefault").innerHTML = messagero();
+                </script>
+            </div>
+            <br>
+            <div>
+                {
+                "characters":[
+                {"firstName":"Warwond", "lastName":"Blackfur"},
+                {"firstName":"Samuel", "lastName":""},
+                {"firstName":"Jenireth", "lastName":"Ishar"}
+                ]
+                }
+                <br>
+                <p>Parse JSON code in JS code with the 'for(loop)' operator:</p>
+                <p id="objectFromJSONString"></p>
+            </div>
+            <br>
+            <div>
+                <p id="dateToStringWithJSON"></p>
+                <p id="showFunction"></p>
+                <p id="functionToStringWithJSON"></p>
+                <p id="arrayToStringWithJSON"></p>
+            </div>
+            <br>
+            <div>
+                <p id="getKeyword"></p>
+                <p id="setKeyword"></p>
+                <p id="objectDefineProperty"></p>
+                <p id="objectConstructor"></p>
+                <p id="changeNameMethod"></p>
+            </div>
+            <br>
+            <div>
+            <pre>Use string literals "" instead of new String().
+
+Use number literals 50 instead of new Number().
+
+Use boolean literals true / false instead of new Boolean().
+
+Use object literals {} instead of new Object().
+
+Use array literals [] instead of new Array().
+
+Use pattern literals /()/ instead of new RegExp().
+
+Use function expressions () {} instead of new Function().</pre>
+                <p id="primitiveValuesInsteadOfNewValue"></p>
+            </div>
+            <br>
+            <div>
+                <p id="iterableNumberWithNext"></p>
+                <p id="iterableIteratedWithFor"></p>
+                <p id="iterableIteratedWithWhile"></p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id="C2">
+        <div>
+            <p style="font-size: 30px">More about Objects</p>
+            <pre>
+        Managing Objects:
+            // Create object with an existing object as prototype
+            Object.create()
+
+            // Adding or changing an object property
+            Object.defineProperty(object, property, descriptor)
+
+            // Adding or changing object properties
+            Object.defineProperties(object, descriptors)
+
+            // Accessing Properties
+            Object.getOwnPropertyDescriptor(object, property)
+
+            // Returns all properties as an array
+            Object.getOwnPropertyNames(object)
+
+            // Accessing the prototype
+            Object.getPrototypeOf(object)
+
+            // Returns enumerable properties as an array
+            Object.keys(object)
+
+        Protecting Objects:
+            // Prevents adding properties to an object
+            Object.preventExtensions(object)
+
+            // Returns true if properties can be added to an object
+            Object.isExtensible(object)
+
+            // Prevents changes of object properties (not values)
+            Object.seal(object)
+
+            // Returns true if object is sealed
+            Object.isSealed(object)
+
+            // Prevents any changes to an object
+            Object.freeze(object)
+
+            // Returns true if object is frozen
+            Object.isFrozen(object)
+            </pre>
+        </div>
+        <br>
+        <div>
+            <p id="changePropertyValueBefore"></p>
+            <p id="changePropertyAfter"></p>
+            <p id="listProperties"></p>
+            <p id="listEnumerableProperties"></p>
+            <p id="addProperty"></p>
+            <p id="addGetterProperties"></p>
+        </div>
+    </div>
+    <br>
+    <div id="C3">
+        <p style="font-size: 30px">More about Functions</p>
+        <p id="simplePostVariableFunction"></p>
+        <p id="simpleVariableFunction"></p>
+        <p id="selfInvokedFunction"></p>
+        <pre>
+Common function
+let x = function(x, y) {
+  return x * y;
+}
+
+Arrow function
+const x = (x, y) => { return x * y};
+            </pre>
+        <p id="settingDefaultInFunction"></p>
+        <p id="settingDefaultValuetInFunction"></p>
+        <p id="restParameterInFunction"></p>
+        <p id="restParameterWithForInFunction"></p>
+        <p id="findTheLargestFunction"></p>
+        <p id="callFunction"></p>
+        <p id="bindWithThisInFunction"></p>
+        <p id="bindExplaining"></p>
+        <br>
+        <div>
+            <button type="button" onclick="Counting()">Count</button>
+            <p id="counterDilemma"></p>
+        </div>
+        <pre>
+    The variable add is assigned to the return value of a self-invoking function.
+
+    The self-invoking function only runs once. It sets the counter to zero (0), and returns a function expression.
+
+    This way add becomes a function. It can access the counter in the parent scope.
+
+    This is called a JavaScript closure. It makes it possible for a function to have "private" variables.
+
+    The counter is protected by the scope of the anonymous function, and can only be changed using the add function.
+
+    A closure is a function having access to the parent scope, even after the parent function has closed.</pre>
+    </div>
+    <br>
+    <div id="C4">
+        <p style="font-size: 30px">More about Classes</p>
+        <p id="classInheritance"></p>
+        <br>
+        <div id="hint">
+            <p>use the underscore character to separate the getter/setter from the actual property:</p>
+            <p id="getterAndSetterInClass"></p>
+        </div>
+        <br>
+        <p id="ClassStaticMethod"></p>
+    </div>
+    <br>
+    <div id="C5">
+        <p style="font-size: 30px">"Async"</p>
+        <p id="callBackFunction"></p>
+        <p id="callBackFunctionWithArrowFunction"></p>
+        <p id="setIntervalWithCallbackInFunction"></p>
+        <p id="thenMethodWithPromise"></p>
+        <p id="timeOutExampleWithPromiseAndThenMethod"></p>
+        <p id="waitingForAFilePromise"></p>
+        <p id="asyncForPromise"></p>
+        <p id="asyncAwaitForPromise"></p>
+    </div>
+    <br>
+    <div id="C6">
+        <p style="font-size: 30px">DOM</p>
+        <div>
+            <p id="intro">They gonna find me by id</p>
+            <p id="findingElementWithIDInDOM"></p>
+        </div>
+        <p id="findingElementByTagNameInDOM"></p>
+        <p id="findingElementByTagNameInsideOfIdInDOM"></p>
+        <p id="findingElementByClassNameInDOM"></p>
+        <p id="findingElementByQuerySelectorInDOM"></p>
+        <div>
+            <form id="form" action="https://www.w3schools.com/action_page.php" target="_blank"
+                  onsubmit="return validateForm()" method="post">
+                First name: <input type="text" name="fname" minlength="3" maxlength="15"><br>
+                Last name: <input type="text" name="lname" minlength="3" maxlength="15"><br><br>
+                <input id="changeStyleOfButt" type="submit" text="Submit">
+            </form>
+        </div>
+        <p id="findingElementByObjectCollectionsInDOM"></p>
+        <pre>The following HTML objects (and object collections) are also accessible:
+
+    document.anchors
+    document.body
+    document.documentElement
+    document.embeds
+    document.forms
+    document.head
+    document.images
+    document.links
+    document.scripts
+    document.title
+            </pre>
+        <div>
+            <img id="pic" src="imgs/european_renaissance_two_hand_swords.png" style="width: 300px; height: 200px;"
+                 alt="swords" onclick="privetstvie()">
+        </div>
+        <br>
+        <div>
+            <button id="toChangeText" onclick="moveIt()">Click To move</button>
+            <br>
+            <div id="container">
+                <div onclick="changeColor(this)" id="animate"></div>
+            </div>
+        </div>
+        <br>
+        <div>
+            <button id="anotherButton">Show date</button>
+            <p id="showHere"></p>
+        </div>
+        <p id="CheckCookieOnload"></p>
+        <br>
+        <div>
+            I'll biggify your text: <input type="text" id="frameToBiggify" oninput="toUpperCase()">
+            <p>When you write in the input field, a function is triggered to transform the input to upper case.</p>
+        </div>
+        <br>
+        <div>
+            Similar but after biggify : <input type="text" id="frameAfterBiggify"
+                                               onchange="AfterLeavingToUpperCase()">
+            <p>When you leave the input field, a function transforms the input to upper case.</p>
+        </div>
+        <br>
+        <div onmouseover="mouseHover(this)" onmouseout="mouseUnhover(this)" style="background-color:#D94A38;
+            width:300px;height:100px;padding:40px;">hover dis
+        </div>
+        <br>
+        <button id="clickEventListener">Click to alert</button>
+        <br>
+        <button id="clickEventListenerExternalFunction">Click to alert x2</button>
+        <br>
+        <br>
+        <div>
+            <button id="manyEventListenersInOne">Hover, unhover, click</button>
+            <p id="showOfListeners"></p>
+        </div>
+        <br>
+        <div>
+            <p>Try resizing this browser window to trigger the "resize" event handler: <span
+                    id="eventOnWindow"></span></p>
+        </div>
+        <br>
+        <div>
+            <p>lil calc</p>
+            <input type="number" oninput="p1Func()" id="calcInput1"><span
+                id="incrementionNotButton"> * </span><input type="number" oninput="p2Func()" id="calcInput2">
+            <p id="lilCalcResult"></p>
+        </div>
+        <br>
+        <div>
+            <p>"addEventListener(event, function, useCapture);" <br>
+                The default value is false, which will use the bubbling propagation, when the value is set to true,
+                the event uses the capturing propagation.</p>
+            <div id="myDiv1">
+                <h2 style="border: none">Bubbling:</h2>
+                <p id="myP1">Click me!</p>
+            </div>
+            <br>
+            <div id="myDiv2">
+                <h2 style="border: none">Capturing:</h2>
+                <p id="myP2">Click me!</p>
+            </div>
+        </div>
+        <br>
+        <pre>
+    The element node "p" or other do not contain text.
+
+    It contains a text node with the value.
+
+    The value of the text node can be accessed by the node's innerHTML property:
+
+    myTitle = document.getElementById("demo").innerHTML;
+    Accessing the innerHTML property is the same as accessing the nodeValue of the first child:
+
+    myTitle = document.getElementById("demo").firstChild.nodeValue;
+    Accessing the first child can also be done like this:
+
+    myTitle = document.getElementById("demo").childNodes[0].nodeValue;</pre>
+        <br>
+        <pre>
+The most important nodeType properties are:
+
+Node	               Type	        Example
+ELEMENT_NODE	        1	        "h1" class="heading">W3Schools "h1"
+ATTRIBUTE_NODE	        2	        class = "heading" (deprecated)
+TEXT_NODE	        3	        ElindiOwl
+COMMENT_NODE	        8	        This is a comment
+DOCUMENT_NODE	        9	        The HTML document itself (the parent of html)
+DOCUMENT_TYPE_NODE	10	        !Doctype html</pre>
+        <br>
+        <div id="creatingNode">
+            <p id="parag1">Old text</p>
+            <p id="parag2">Old text</p>
+            <p id="parag3">Old text</p>
+            <p id="parag4">Old text</p>
+            <p id="parag5">Old text</p>
+        </div>
+    </div>
+    <br>
+    <div id="C7">
+        <p style="font-size: 30px">BOM</p>
+        <p id="BOMInnerWidthAndHeight"></p>
+        <p id="BOMScreenParameters"></p>
+        <p id="BOMLocation"></p>
+        <div>
+            <button onclick="returnToTheFirstPage()">Load new doc(1rst Page)</button>
+            <br>
+            <button onclick="goBackInHistory()">go Back</button>
+            <br>
+            <button onclick="goForwardInHistory()">go Forward</button>
+            <br>
+            <button onclick="goToSpecificURLInHistoryList()">go Back on 3 pages</button>
+        </div>
+        <div>
+            <p id="BOMNavigator"></p>
+            <pre>
+The information from the navigator object can often be misleading.
+
+The navigator object should not be used to detect browser versions because:
+
+Different browsers can use the same name
+The navigator data can be changed by the browser owner
+Some browsers misidentify themselves to bypass site tests
+Browsers cannot report new operating systems, released later than the browser
+            </pre>
+        </div>
+        <div>
+            <button onclick="confirmBox()">Press to confirm</button>
+            <p id="confirmBoxShowChoise"></p>
+        </div>
+        <div>
+            <button onclick="promptBox()">Press to enter a name</button>
+            <p id="promptBoxShowChoise"></p>
+        </div>
+        <br>
+        <div>
+            <button onclick="setTimeout(alertForTimeOut, 5000)">It will pop in 5 seconds</button>
+            <br><br>
+            <button onclick="alertToAnnoy()">This will annoy you (for 12 seconds)</button>
+        </div>
+        <br>
+        <p id="showCookies"></p>
+    </div>
+    <br>
+    <div id="C8">
+        <p style="font-size: 30px">WEB APIs</p>
+        <div>
+            <button onclick="getLocationAPI()">Get location</button>
+            <p id="showLocation"></p>
+            <p id="mapholder"></p>
+        </div>
+        <br>
+        <div>
+            <input id="validation" type="number" min="100" max="999" required>
+            <button onclick="validateFunction()">Ok</button>
+            <p id="showValidationResult"></p>
+            <p>If the number is less than 100 or greater than 999, an error message will be displayed.</p>
+        </div>
+        <pre>
+The validity property of an input element contains a number of properties related to the validity of data:
+
+Property	Description
+customError	Set to true, if a custom validity message is set.
+patternMismatch	Set to true, if an element's value does not match its pattern attribute.
+rangeOverflow	Set to true, if an element's value is greater than its max attribute.
+rangeUnderflow	Set to true, if an element's value is less than its min attribute.
+stepMismatch	Set to true, if an element's value is invalid per its step attribute.
+tooLong	        Set to true, if an element's value exceeds its maxLength attribute.
+typeMismatch	Set to true, if an element's value is invalid per its type attribute.
+valueMissing	Set to true, if an element (with a required attribute) has no value.
+valid	        Set to true, if an element's value is valid.
+            </pre>
+        <p id="localStorageAPI"></p>
+        <p id="sessionStorageAPI"></p>
+        <pre>
+Storage Object Properties and Methods:
+
+Property/Method	           Description
+
+key(n)	                   Returns the name of the nth key in the storage
+length	                   Returns the number of data items stored in the Storage object
+getItem(keyname)	   Returns the value of the specified key name
+setItem(keyname, value)	   Adds a key to the storage, or updates a key value (if it already exists)
+removeItem(keyname)	   Removes that key from the storage
+clear()	                   Empty all key out of the storage
+
+Related Pages for Web Storage API:
+
+Property	           Description
+
+window.localStorage	   Allows to save key/value pairs in a web browser. Stores the data with no expiration date
+window.sessionStorage	   Allows to save key/value pairs in a web browser. Stores the data for one session
+            </pre>
+        <div>
+            <p>Count numbers:
+                <output id="countingWorkerResult"></output>
+            </p>
+            <button onclick="startWorker()">Start Worker</button>
+            <button onclick="stopWorker()">Stop Worker</button>
+        </div>
+        <br>
+        <p id="fetchAPI">I'm text here, nothing special</p>
+        <p id="arrowFuncFetchAPI">Replace me </p>
+    </div>
+    <br>
+    <div id="C9">
+        <p style="font-size: 30px">AJAX</p>
+        <div id="AJAXRequest">
+            <p>Send a request to change me</p>
+            <button type="button" onclick="loadDocumentWithAJAX()">Change content</button>
+        </div>
+        <br>
+        <br>
+        <!--<div>
+            <button type="button" onclick="loadDocumentWithAJAXMultiple()">Change content</button>
+            <div id="AJAXRequestMultiple1">
+                <p>Send a request to change me</p>
+            </div>
+            <div id="AJAXRequestMultiple2">
+                <p>Send a request to change me</p>
+            </div>
+        </div>-->
+        <br>
+        <br>
+        <div id="AJAXRequestOnreadystatechange">
+            <p>Send a request to see a spinning duck</p>
+            <button type="button" onclick="loadDocumentWithAJAXOnreadystatechange()">Change content</button>
+        </div>
+        <div id="AJAXRequestPostMethod">
+            <p>Send a request to get a name</p>
+            <button type="button" onclick="AJAXPostMethodToGetAName()">Press</button>
+        </div>
+        <br>
+        <p id="AJAXResponseHeader"></p>
+        <br>
+        <br>
+        <div id="cdTable">
+            <button type="button" onclick="loadCDCatalog()">Get CD collection</button>
+            <br><br>
+            <table id="cdCatalog"></table>
+            <br>
+            <div id="hideAndShowCDInfo">
+                <div id='showCD'></div>
+                <br>
+                <input type="button" onclick="previous()" value="<<">
+                <input type="button" onclick="next()" value=">>">
+            </div>
+        </div>
+        <br>
+        <!--            <div>
+                        <p>Suggestions: <span id="AJAXNameHint"></span></p>
+                        <p>First name: <input type="text" id="txt" onkeyup="showHint(this.value)"></p>
+                        <pre>
+        First, check if the input field is empty (str.length == 0). If it is, clear the content of the txtHint placeholder and exit the function.
+
+        However, if the input field is not empty, do the following:
+
+        Create an XMLHttpRequest object
+        Create the function to be executed when the server response is ready
+        Send the request off to a PHP file (Name_List.php) on the server
+        Notice that q parameter is added Name_List.php?q="+str
+        The str variable holds the content of the input field
+                        </pre>
+                    </div>
+                    <div>
+                        <p>Suggestions: <span id="txtHint"></span></p>
+                        <p>First name: <input type="text" id="txt1" onkeyup="showHint2(this.value)"></p>
+                    </div>
+                    <div>
+                        <form action="">
+                            <select name="customers" onchange="showCustomer(this.value)">
+                                <option value="">Select a customer:</option>
+                                <option value="ALFKI">Alfreds Futterkiste</option>
+                                <option value="NORTS ">North/South</option>
+                                <option value="WOLZA">Wolski Zajazd</option>
+                            </select>
+                        </form>
+                        <br>
+                        <div id="txtiint">Customer info will be listed here...</div>
+                    </div>
+                    <br>-->
+    </div>
+    <br>
+    <div id="C10">
+        <p style="font-size: 30px">JSON</p>
+        <p id="JSONParsingText"></p>
+        <p id="JSONParsingArray"></p>
+        <p id="JSONParsingTextWithDateAndReviverFunction"></p>
+        <p id="JSONSendingObject"></p>
+        <p id="JSONReceivingObject"></p>
+    </div>
+    <br>
+    <div id="C11">
+        <p style="font-size: 30px">Graphics</p>
+        <canvas id="cGridCanvas" width="300" height="300"
+                style="border:1px solid grey; background-color: #262633"></canvas>
+        <canvas id="lineGraphCanvas" width="300" height="300"
+                style="border:1px solid grey; background-color: #f4ffc6"></canvas>
+        <canvas id="canvasGraphTogether" width="300" height="300"
+                style="border:1px solid grey; background-color: #441400"></canvas>
+        <br>
+        <br>
+        <div class="plots" id="columnElemPowersPlotWithPlotly"
+             style="display:flex; width:700px; max-width:100%"></div>
+        <br>
+        <div class="plots" id="rowElemPowersPlotWithPlotly" style="display:flex; width:700px; max-width:100%"></div>
+        <br>
+        <div class="plots" id="pieElemPowersPlotWithPlotly" style="display:flex; width:700px; max-width:100%"></div>
+        <br>
+        <div class="plots" id="donutElemPowersPlotWithPlotly"
+             style="display:flex; width:700px; max-width:100%"></div>
+        <br>
+        <div class="plots" id="equationsPlotWithPlotly" style="display:flex; width:700px; max-width:100%"></div>
+        <br>
+        <div class="plots" id="linedGraphPlotWithPlotly" style="display:flex; width:700px; max-width:100%"></div>
+        <br>
+        <br>
+        <pre>
+There are 2 more method packs like:
+
+Chart.js is an free JavaScript library for making HTML-based charts.
+It is one of the simplest visualization libraries for JavaScript, and comes with the many built-in chart types:
+ Scatter Plot
+ Line Chart
+ Bar Chart
+ Pie Chart
+ Donut Chart
+ Bubble Chart
+ Area Chart
+ Radar Chart
+ Mixed Chart
+
+Google Chart. From simple line charts to complex hierarchical tree maps,
+the Google Chart gallery provides a large number of ready-to-use chart types:
+ Scatter Chart
+ Line Chart
+ Bar / Column Chart
+ Area Chart
+ Pie Chart
+ Donut Chart
+ Org Chart
+ Map / Geo Chart
+            </pre>
+    </div>
+</div>
+
+<div class="row">
+    <div class="column">
+        <img src="GridImgs/Ангелы_Солнца.png" style="width:100%" alt="">
+        <img src="GridImgs/Варвонд_на_пути_к_Дендарону.png" style="width:100%" alt="">
+        <img src="GridImgs/Великий_Змей_Одридис_встречает_корабль_Варвонда.png" style="width:100%" alt="">
+        <img src="GridImgs/Главный_ужас_больного_Митенхольда.png" style="width:100%" alt="">
+        <img src="GridImgs/Джулия_после_оживления_Чуждыми.png" style="width:100%" alt="">
+        <img src="GridImgs/Джулия,_являющаяся_во_снах.png" style="width:100%" alt="">
+    </div>
+
+    <div class="column">
+        <img src="GridImgs/Логариус_Алый_Святой.png" style="width:100%" alt="">
+        <img src="GridImgs/Ритуал_забвения_алого_святого.png" style="width:100%" alt="">
+        <img src="GridImgs/Душа_Алого_Святого.png" style="width:100%" alt="">
+        <img src="GridImgs/Кошмары_больного_Митенхольда.png" style="width:100%" alt="">
+        <img src="GridImgs/Перерождение_Тона.png" style="width:100%" alt="">
+        <img src="GridImgs/Драгера_с_пика_Дендарон.png" style="width:100%" alt="">
+        <img src="GridImgs/Ночной_житель_больного_Митенхольда.png" style="width:100%" alt="">
+    </div>
+
+    <div class="column">
+        <img src="GridImgs/Драконья_форма_Варвонда.png" style="width:100%" alt="">
+        <img src="GridImgs/Инкаани_Райс.png" style="width:100%" alt="">
+        <img src="GridImgs/Кошмар_картины_принца-сыча.png" style="width:100%" alt="">
+        <img src="GridImgs/Хранитель_Летучая_Мышь.png" style="width:100%" alt="">
+        <img src="GridImgs/Сэмюэль_в_больном_Митенхольде.png" style="width:100%" alt="">
+        <img src="GridImgs/Руки_безумия_Сэмюэля.png" style="width:100%" alt="">
+    </div>
+
+    <div class="column">
+        <img src="GridImgs/Зимний_Митенхольд.png" style="width:100%" alt="">
+        <img src="GridImgs/Мбылица.png" style="width:100%" alt="">
+        <img src="GridImgs/Путь_Тона_горы_Дендарон.png" style="width:100%" alt="">
+        <img src="GridImgs/Улицы_Брюнкеста.png" style="width:100%" alt="">
+        <img src="GridImgs/Вселенная_за_пределами_Утонхельда.png" style="width:100%" alt="">
+        <img src="GridImgs/Путь_к_Митенхольду_(финал).png" style="width:100%" alt="">
+        <img src="GridImgs/Командир_Гвардии_Джулия.png" style="width:100%" alt="">
+    </div>
+</div>
+
+<div class="footer">
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="TheProject.html">1</a>
+        <a href="TheProject_2nd_Page.html">2</a>
+        <a href="TheProject_3rd_Page.html">3</a>
+        <a class="active" href="#">4</a>
+        <a href="#">&raquo;</a>
+    </div>
+</div>
+
+<div class="upward"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="JavaScriptTraining/Jscode.js"></script>
+<script src="JavaScriptTraining/morePractice.js"></script>
+<script src="upwardfunc.js"></script>
+<script src="WebCounter.js"></script>
+<script src="Cookie.js"></script>
+<script src="HealthyButtonList.js"></script>
+<script src="navbar_animation.js"></script>
+<script src="hidemoron.js"></script>
+<script src="MyOwn.js"></script>
+<script src="LilCanvas.js"></script>
+<script src="Location.js"></script>
+<script src="DrugOrDrag.js"></script>
+<script src="4thStyleSheet.js"></script>
+</body>
+</html>

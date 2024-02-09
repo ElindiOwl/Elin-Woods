@@ -1,0 +1,9 @@
+footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(37, 2, 2);
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}

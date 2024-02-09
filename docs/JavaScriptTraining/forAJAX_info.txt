@@ -1,0 +1,10 @@
+<div>
+<h2>AJAX</h2>
+<pre>
+AJAX is not a programming language.
+
+AJAX is a technique for accessing web servers from a web page.
+
+AJAX stands for Asynchronous JavaScript And XML.
+</pre>
+</div>
