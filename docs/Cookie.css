@@ -1,9 +1,0 @@
-.coockClick {
-    transform: scale(0.99);
-}
-.coockClick:hover {
-    transform: scale(1);
-}
-.coockClick:active {
-    transform: scale(1.01);
-}

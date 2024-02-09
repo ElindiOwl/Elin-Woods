@@ -1,9 +1,0 @@
-.jumpscr img{
-    display: none;
-}
-div.jumpscr:hover img{
-    display: block;
-}
-img.jumpscr:focus {
-
-}

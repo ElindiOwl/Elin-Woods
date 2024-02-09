@@ -1,8 +1,0 @@
-.sssa::first-letter {
-    color: rgba(255, 0, 50, 0.74);
-    font-size: xx-large;
-    text-shadow: black 1px 1px 0;
-}
-.sssa::first-line {
-    font-variant: small-caps;
-}
