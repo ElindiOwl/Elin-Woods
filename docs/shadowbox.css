@@ -1,7 +1,0 @@
-.jumpshad {
-    z-index: 10;
-    position: relative;
-}
-.jumpshad:hover {
-    box-shadow: 0 0 80px 100px rgba(0, 0, 0, 1);
-}

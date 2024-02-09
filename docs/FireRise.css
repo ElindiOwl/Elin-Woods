@@ -1,9 +1,0 @@
-.fireeye {
-    transform: scale(0.99);
-}
-.fireeye:hover {
-    transform: scale(1);
-}
-.coockClick:active {
-    transform: scale(1.4);
-}
