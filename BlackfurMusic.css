@@ -16,10 +16,24 @@
     border: none;
 }
 
+.songsText {
+    margin-top: 320px;
+    margin-right: 10px;
+}
 @media screen and (max-width: 650px) {
     .songs {
         width: 200px;
         height: 420px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .songs {
+        width: 200px;
+        height: 367px;
+    }
+    .songsText {
+        margin-top: 155px;
     }
 }
 
