@@ -12,8 +12,8 @@
 /* Adjustments for mobile devices */
 @media only screen and (max-width: 768px) {
     .inka {
-        background-size: cover; /* Example adjustment for smaller screens */
-        -webkit-background-size: cover; /* For Safari */
+        background-size: contain; /* Example adjustment for smaller screens */
+        -webkit-background-size: contain; /* For Safari */
         background-position: center;
         background-attachment: fixed;
     }
