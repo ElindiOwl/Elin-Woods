@@ -12,6 +12,7 @@
 .upward:focus {
     filter: brightness(1.5);
     outline: none;
+    cursor: pointer;
 }
 .upward:before,
 .upward:after {
