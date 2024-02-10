@@ -1,9 +1,15 @@
 .coockClick {
     transform: scale(0.99);
+    -webkit-transform: scale(0.99); /* Safari */
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
 }
+
 .coockClick:hover {
     transform: scale(1);
+    -webkit-transform: scale(1); /* Safari */
 }
+
 .coockClick:active {
     transform: scale(1.01);
+    -webkit-transform: scale(1.01); /* Safari */
 }
