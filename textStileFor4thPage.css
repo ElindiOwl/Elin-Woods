@@ -4,3 +4,10 @@ pre {
     word-wrap: break-word;
     max-width: 100%;
 }
+
+p {
+    white-space: pre-wrap;
+    overflow-x: auto;
+    word-wrap: break-word;
+    max-width: 100%;
+}
