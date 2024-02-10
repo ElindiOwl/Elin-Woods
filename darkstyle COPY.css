@@ -24,8 +24,10 @@ p  {
 }
 pre {
    color: white;
+   white-space: pre-wrap;
+   overflow-x: auto;
    word-wrap: break-word;
-    max-width: 100vw;
+   max-width: 100vw;
 }
 bdo {
    color: white;
