@@ -1,11 +1,18 @@
 .inka {
     background-image: url('imgs/Inkaani.png');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    -webkit-background-size: cover; /* For Safari */
-    box-shadow: 10px 10px 10px black; /* Apply shadow to the entire element */
-    -webkit-box-shadow: 10px 10px 10px black; /* For Safari */
+    background-size: contain; /* Adjust as needed */
+    -webkit-background-size: contain; /* For Safari */
+    box-shadow: 10px 10px 10px black;
+    -webkit-box-shadow: 10px 10px 10px black;
+}
+
+/* Adjustments for mobile devices */
+@media only screen and (max-width: 768px) {
+    .inka {
+        background-size: cover; /* Example adjustment for smaller screens */
+        -webkit-background-size: cover; /* For Safari */
+    }
 }
 
 .inka pre {
