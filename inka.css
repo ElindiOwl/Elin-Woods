@@ -3,8 +3,9 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-size: 100% 100%;
-    text-shadow: black 10px 10px 10px;
+    -webkit-background-size: cover; /* For Safari */
+    box-shadow: 10px 10px 10px black; /* Apply shadow to the entire element */
+    -webkit-box-shadow: 10px 10px 10px black; /* For Safari */
 }
 
 .inka pre {
