@@ -24,6 +24,7 @@ p  {
 }
 pre {
    color: white;
+   word-wrap: break-word;
 }
 bdo {
    color: white;
