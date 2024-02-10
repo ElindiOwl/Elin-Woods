@@ -4,8 +4,6 @@
     background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover; /* For Safari */
-    box-shadow: 10px 10px 10px black; /* Apply shadow to the entire element */
-    -webkit-box-shadow: 10px 10px 10px black; /* For Safari */
 }
 
 .inka pre {
