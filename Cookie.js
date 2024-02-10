@@ -12,3 +12,21 @@ function clickCounter() {
 }
 document.getElementById("result").style.color = "Brown";
 
+document.querySelectorAll('.coockClick').forEach(function(button) {
+    button.addEventListener('mousedown', function() {
+        this.style.transform = 'scale(1.01)';
+    });
+
+    button.addEventListener('touchstart', function() {
+        this.style.transform = 'scale(1.01)';
+    });
+
+    button.addEventListener('mouseup', function() {
+        this.style.transform = 'scale(0.99)';
+    });
+
+    button.addEventListener('touchend', function() {
+        this.style.transform = 'scale(0.99)';
+    });
+});
+
