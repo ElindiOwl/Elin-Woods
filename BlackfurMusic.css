@@ -1,12 +1,27 @@
 .Blackfur {
     background-image: url('imgs/95d889ef8f094ece86c2fb850a1a.png');
+    max-width: 100%;
+    overflow-x: hidden;
     width: 735px;
-    height: 719px;
     background-repeat: no-repeat;
     background-attachment: local;
     background-size: contain;
 }
 
+.songs {
+    max-width: 100%;
+    width: 300px;
+    height: 719px;
+    background: none;
+    border: none;
+}
+
+@media screen and (max-width: 650px) {
+    .songs {
+        width: 200px;
+        height: 420px;
+    }
+}
 
 audio::-webkit-media-controls-panel {
     background-color: #888; /* Set background color for WebKit browsers */
