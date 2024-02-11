@@ -28,12 +28,12 @@
 @media screen and (max-width: 800px) {
     .SP {
         background-image: url("imgs/SouthChars.png"), url("imgs/butterfly.png"), url("imgs/SouthBack.png");
-        background-position: 50% 80%, 85% 20%;
+        background-position: 50% 80%, 85% 10%;
         background-size: 400px, 70px, cover;
     }
     .SP:hover {
         background-image: url("imgs/SouthChars.png"), url("imgs/butterfly.png"), url("imgs/SouthBack.png");
-        background-position: 50% 80%, 15% 20%;
+        background-position: 50% 80%, 15% 10%;
         background-size: 400px, 70px, cover;
     }
     .hero-text {
