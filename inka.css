@@ -50,10 +50,10 @@
         background-position: center;
         background-attachment: fixed;
         height: 300px;
-        width: 300px;
+        width: 200px;
     }
     .bookWW .inkaRightText {
-        font-size: 10px; /* or whatever size you want to set */
+        font-size: 9px; /* or whatever size you want to set */
         max-width: 50vw;
         line-height: 1;
     }
