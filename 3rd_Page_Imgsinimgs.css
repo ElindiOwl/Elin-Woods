@@ -12,7 +12,7 @@
     text-align: center;
     position: absolute;
     left: 38%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -30%);
     color: #ffd600;
     font-family: Bookman, serif;
     text-shadow: black 1px 1px 0;
@@ -25,7 +25,7 @@
     background-repeat: no-repeat;
     padding: 15px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .SP {
         background-image: url("imgs/SouthChars.png"), url("imgs/butterfly.png"), url("imgs/SouthBack.png");
         background-position: 50% 80%, 85% 20%;
@@ -35,5 +35,38 @@
         background-image: url("imgs/SouthChars.png"), url("imgs/butterfly.png"), url("imgs/SouthBack.png");
         background-position: 50% 80%, 15% 20%;
         background-size: 400px, 70px, cover;
+    }
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        left: 38%;
+        transform: translate(-25%, -30%);
+        color: #ffd600;
+        font-family: Bookman, serif;
+        text-shadow: black 1px 1px 0;
+        font-variant: small-caps;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .SP {
+        background-image: url("imgs/SouthChars.png"), url("imgs/butterfly.png"), url("imgs/SouthBack.png");
+        background-position: 50% 80%, 85% 10%;
+        background-size: 300px, 50px, cover;
+    }
+    .SP:hover {
+        background-image: url("imgs/SouthChars.png"), url("imgs/butterfly.png"), url("imgs/SouthBack.png");
+        background-position: 50% 80%, 15% 10%;
+        background-size: 300px, 50px, cover;
+    }
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        left: 38%;
+        transform: translate(-30%, -30%);
+        color: #ffd600;
+        font-family: Bookman, serif;
+        text-shadow: black 1px 1px 0;
+        font-variant: small-caps;
     }
 }
