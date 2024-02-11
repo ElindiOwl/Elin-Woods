@@ -65,6 +65,7 @@
         left: 38%;
         transform: translate(-30%, -30%);
         color: #ffd600;
+        line-height: 0.8;
         font-family: Bookman, serif;
         text-shadow: black 1px 1px 0;
         font-variant: small-caps;

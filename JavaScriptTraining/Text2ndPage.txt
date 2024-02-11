@@ -1,0 +1,88 @@
+<div>
+                    <h1 style="border: none; background-image: none;color: white">Dolby Atmos</h1>
+                    <p style="border: none; background-image: none">Dolby Atmos is a suite of technologies for immersive
+                        audio having both horizontal and vertical sound placement, using a combination of channel and
+                        object-based mixing and delivery.</p>
+                    <p style="border: none; background-image: none">he means of delivering the channels and objects differ
+                        given the technical limitations across different media, and the target platform. Dolby Atmos is not
+                        a codec; on the consumer market, pre-recorded Dolby Atmos is delivered as an extension to a Dolby
+                        TrueHD, Dolby Digital Plus, or Dolby AC-4 stream.</p>
+                </div>
+                <hr>
+                <div class="ndtextfont">
+                    <div>
+                        <div>
+                            <code style="color: white">
+                                x = 5;
+                                y = 6;
+                                z = x + y;
+                            </code>
+                        </div>
+                        <div>
+                            <p style="padding: 0;border: none; background-image: none;color: white;">If
+                                you
+                                really wanna beat DOTA 2, press <kbd>alt + F4</kbd></p>
+                        </div>
+                        <div>
+                            <p style="padding: 0;border: none; background-image: none;color: white;">
+                                When
+                                you try to get to the site before I put it on server you will probably see: </p>
+                            <p style="padding: 0;border: none; background-image: none;color: white;"><samp>"Error 404<br>Page
+                                not found"</samp></p>
+                        </div>
+                        <div>
+                            <p style="padding: 0;border: none; background-image: none;color: white;">The area of a triangle
+                                is:
+                                1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the
+                                vertical height.</p>
+                        </div>
+                        <div>
+                    <pre title="Лысый?">
+     <b>Bold man</b>
+                    </pre>
+                            <pre>
+     <strong>Surely important stuff</strong>
+     <i>"Spooky scary italic text"</i>
+     <em>"emphasized one whatever it means"</em>
+                    </pre>
+                            <pre title="That shy tittle bitch">
+     <small>uhm...hemn... Hey OwO</small>
+                    </pre>
+                        </div>
+                    </div>
+                    <img id="drag1" src="imgs/Peas.png" alt="Peasant" draggable="true" ondragstart="drag(event)"
+                         style="width: 448px; height: 150px; max-width: 100%; cursor: pointer">
+                    <div>
+                        <h2 style="background: none;font-size:20px;color:rgb(199,232,245);text-align:center;"
+                            title="actually another paragraph">
+                            The poem problem:
+                        </h2>
+                        <p style="border: none;background: none; padding: 0; margin: 0" title="it just don't work this way">
+                            My Bonnie lies over the ocean. My Bonnie lies over the sea. My Bonnie lies
+                            over the ocean. Oh, bring back my Bonnie to me.
+                        </p>
+                        <p style="border: none; background: none; padding: 10px; margin: 0; font-variant: small-caps">Now
+                            the solution:</p>
+                        <pre style="text-align: left" title="so this one must. does it?">
+                    My Bonnie lies over the ocean.
+
+                    My Bonnie lies over the sea.
+
+                    My Bonnie lies over the ocean.
+
+                    Oh, bring back my Bonnie to me.
+                </pre>
+                    </div>
+                    <div>
+                        <p style="border: none; background: none; padding: 10px; margin: 0; font-weight: bold">Text about
+                            backward reading to read in backwards:</p>
+                        <bdo dir="rtl"><span>Nacirema</span> ("American" spelled backwards) is a term used in anthropology
+                            and sociology in relation to aspects of the behavior and society of
+                            citizens of the United States of America. The neologism attempts to create
+                            a deliberate sense of self-distancing in order that American
+                            anthropologists might look at their own culture more objectively.</bdo>
+                        <!-- Information for... myself? anyway it won't be shown on the site itself -->
+                        <!-- <p>Yeah, I can even hide paragraphs in it just as other stuff for some reason </p> -->
+                    </div>
+                </div>
+            </div>

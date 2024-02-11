@@ -1,0 +1,114 @@
+            <div style="display: flex; justify-content: center;">
+                <p style="border: none;background: none;">Gallery</p>
+            </div>
+            <div class="jumpscr jumpshad" style="background: black;">
+                <p style="padding: 0;margin: 0;border: none;background: none;font-size: 30px; font-family: cursive;color: #736363">
+                    Suspicious text. <span style="color: #ffffff;font-size: 15px;font-variant: small-caps">(don't hover it)</span>
+                </p>
+                <image style="max-width: 100%;" src="imgs/Babadook.png"></image>
+            </div>
+            <br>
+            <div style="max-width: 100%; z-index: 1;" class="dropdown2">
+                <img src="imgs/Джулия%20Оковы%20Смерти.png" alt="Julia" style="width: 100%; height: auto;">
+                <div class="dropdown-content2">
+                    <img src="imgs/Джулия%20Оковы%20Смерти.png" alt="Julia" style="width: 100%; height: auto;">
+                    <div style="max-width: 100%;" class="dec">Julia's last resort</div>
+                </div>
+            </div>
+
+            <br>
+            <div style="background-color: rgba(255,255,255,0.5)">
+                <p style="background: none; border: none; text-align: center; margin-bottom: 0; font-size: 30px; text-shadow: black 1px 1px 0; font-family: Candara,serif">
+                    <span style="color: rgb(151, 247, 255); text-shadow: rgb(151, 247, 255) 1px 1px 10px, black 1px 1px 0">An</span>
+                    <span style="color: rgb(210, 187, 255); text-shadow: rgb(210, 187, 255) 1px 1px 10px, black 1px 1px 0">actual</span>
+                    <span style="color: rgb(34, 249, 208); text-shadow: rgb(34, 249, 208) 1px 1px 10px, black 1px 1px 0">gal</span><span
+                        style="color: rgb(238,212,106);
+                    text-shadow: rgb(238,212,106) 1px 1px 10px, black 1px 1px 0">lery</span>
+                </p>
+                <div>
+                    <div class="responsive" style="background-color: rgba(255,255,255,0.5)">
+                        <div class="gallery" style="background-image: url('imgs/1 - Copy.png');">
+                            <a target="_blank" href="imgs/1.png">
+                                <img src="imgs/1.png" alt="pic"
+                                     style="width: 600px; height: 150px; max-width: 100%; object-fit: cover;">
+                            </a>
+                            <div class="desc"
+                                 style="text-align: center; color: rgb(151, 247, 255); text-shadow: black 1px 1px 0">
+                                From the magic stream
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="responsive" style="background-color: rgba(255,255,255,0.5)">
+                        <div class="gallery" style="background-image: url('imgs/2 - Copy.png');">
+                            <a target="_blank" href="imgs/2.png">
+                                <img src="imgs/2.png" alt="pic"
+                                     style="width: 600px; height: 150px; max-width: 100%; object-fit: cover;">
+                            </a>
+                            <div class="desc"
+                                 style="text-align: center; color: rgb(210, 187, 255); text-shadow: black 1px 1px 0">
+                                Trough a soul of forest
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="responsive" style="background-color: rgba(252,252,252,0.5)">
+                        <div class="gallery" style="background-image: url('imgs/3 - Copy.png');">
+                            <a target="_blank" href="imgs/3.png">
+                                <img src="imgs/3.png" alt="pic"
+                                     style="width: 600px; height: 150px; max-width: 100%; object-fit: cover;">
+                            </a>
+                            <div class="desc"
+                                 style="text-align: center; color: rgb(34, 249, 208); text-shadow: black 1px 1px 0">
+                                Before the scourging gate
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="responsive" style="background-color: rgba(255,255,255,0.5)">
+                        <div class="gallery" style="background-image: url('imgs/4 - Copy.png');">
+                            <a target="_blank" href="imgs/4.png">
+                                <img src="imgs/4.png" alt="pic"
+                                     style="width: 600px; min-height: 100%;height: 150px; max-width: 100%; object-fit: cover;">
+                            </a>
+                            <div class="desc"
+                                 style="text-align: center; color: rgb(70, 27, 8); text-shadow: black 1px 1px 10;">Lean
+                                under the couraging sun
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: rgba(255,255,255,0.3)" class="clearfix"></div>
+            <br>
+            <br>
+            <hr>
+            <div>
+                <p style="text-align: center; border: none; background: none; font-size: 30px;
+                text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">SVGs and stuff</p>
+            </div>
+            <div style="display: flex; align-items: center; flex-direction: row; justify-content: center">
+                <svg style="width: 100px; height: 150px;margin-right: 1px; max-width: 100%">
+                    <circle cx="50px" cy="50px" r="40px" stroke="gray" stroke-width="4" fill="brown"/>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+                <svg style="width: 160px; height: 180px;margin-right: 1px; max-width: 100%">
+                    <rect x="50px" y="20px" rx="50px" ry="20px" width="100px" height="100px"
+                          style="fill: darkcyan;stroke: darkslateblue; stroke-width: 5; opacity: 0.5"/>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+                <svg style="height: 160px; width: 200px; max-width: 100%">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:rgb(191,114,255);stop-opacity:1"/>
+                            <stop offset="100%" style="stop-color:rgb(194,194,194);stop-opacity:1"/>
+                        </linearGradient>
+                    </defs>
+                    <ellipse cx="100px" cy="60px" rx="85px" ry="55px" fill="url(#grad1)"/>
+                    <text fill="#ffffff" style="font-size:40px;" x="70px" y="70px">&#129412;</text>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </div>

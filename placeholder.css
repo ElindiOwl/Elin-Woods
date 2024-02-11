@@ -1,0 +1,47 @@
+.placeholder {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Placeholder image */
+.placeholder-image {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    background-color: #ddd; /* Placeholder color */
+    border-radius: 50%; /* Makes it round, adjust as needed */
+}
+
+/* Placeholder text */
+.placeholder-text {
+    margin-top: 20px;
+    width: 200px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+    background-color: #ddd; /* Placeholder color */
+}
+
+/* Animation for loading effect */
+@keyframes placeholderAnimation {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+.placeholder-image, .placeholder-text {
+    animation: placeholderAnimation 1.5s infinite; /* Adjust animation duration as needed */
+}
+
+/* Styles for specific placeholders */
+.header-placeholder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Ensure it's on top of other content */
+}
+
+.main-placeholder {
+    margin-top: 100px; /* Adjust margin to prevent overlap with fixed header */
+}

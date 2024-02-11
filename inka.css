@@ -1,21 +1,32 @@
 .inka {
     background-image: url('imgs/Inkaani.png');
-    background-position: left;
+    background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover; /* Adjust as needed */
-    -webkit-background-size: cover; /* For Safari */
+    background-position: center;
+    height: 1200px;
     box-shadow: 10px 10px 10px black;
     -webkit-box-shadow: 10px 10px 10px black;
+    max-width: 50vw;
+    -webkit-transform: translate3d(0, 0, 0); /* Safari */
+}
+
+.bookWW .inkaRightText {
+    font-size: 25px; /* or whatever size you want to set */
+    max-width: 50vw;
 }
 
 /* Adjustments for mobile devices */
 @media only screen and (max-width: 768px) {
     .inka {
-        background-size: contain; /* Example adjustment for smaller screens */
-        -webkit-background-size: contain; /* For Safari */
+
         background-position: center;
         background-attachment: fixed;
+        height: 600px;
+    }
+    .bookWW .inkaRightText {
+        font-size: 10px; /* or whatever size you want to set */
+        max-width: 50vw;
+        line-height: 1;
     }
 }
 
@@ -30,10 +41,4 @@
 
 .inkaText {
     font-size: 3em; /* Default font size for larger screens */
-}
-
-@media only screen and (max-width: 768px) {
-    .inkaText {
-        font-size: 2em; /* Adjust font size for smaller screens */
-    }
 }

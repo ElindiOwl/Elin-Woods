@@ -1,0 +1,116 @@
+                <div>
+                    <fieldset>
+                        <legend style="color: white">The sudden Survey!</legend>
+                        <p style="padding: 0;border: none; background-image: none;color: white; margin-bottom: 0">When is
+                            your birthday?</p>
+                        <label for="birthday" style="color: white; font-size: 13px">Don't have to be accurate</label><br>
+                        <input type="date" id="birthday" name="birthday">
+                        <p style="padding: 0;border: none; background-image: none;color: white; margin-bottom: 0">So your
+                            language is...</p>
+                        <form style="color: white" action="https://www.w3schools.com/action_page.php">
+                            <input type="checkbox" id="english" name="eng" value="English">
+                            <label for="english">English</label><br>
+                            <input type="checkbox" id="russian" name="rus" value="Russian">
+                            <label for="russian">Russian</label><br>
+                            <input type="checkbox" id="german" name="ger" value="German">
+                            <label for="german">German</label><br>
+                            <input type="checkbox" id="other" name="or" value="Other">
+                            <label for="other">Other</label>
+
+                            <p style="padding: 0;border: none; background-image: none;color: white; margin-bottom: 0">Do you
+                                study programming?</p>
+                            <input type="radio" id="no" name="prg" value="No">
+                            <label for="no">I have no idea about that</label><br>
+                            <input type="radio" id="yes" name="prg" value="Yes">
+                            <label for="yes">Just started</label><br>
+                            <input type="radio" id="exp" name="prg" value="Experienced">
+                            <label for="exp">I got a real experience</label>
+
+                            <p style="padding: 0;border: none; background-image: none;color: white; margin-bottom: 0">Choose
+                                your fighter:</p>
+                            <label>
+                                <input list="prg_languages" name="prg_languages">
+                            </label>
+                            <datalist id="prg_languages">
+                                <option value="C/C++">
+                                <option value="C#">
+                                <option value="Java">
+                                <option value="Python">
+                                <option value="Html/CSS/JS">
+                                <option value="Other">
+                            </datalist>
+
+                            <p style="padding: 0;border: none; background-image: none;color: white; margin-bottom: 0">A bit
+                                more:</p>
+                            <label>
+                            <textarea type="tell" name="message" rows="10" cols="30"
+                                      placeholder="Tell me about yourself"></textarea>
+                            </label>
+                            <br>
+                            <input type="submit">
+                            <input type="reset" value="Reset">
+                        </form>
+                    </fieldset>
+                </div>
+                <br>
+                <p style="border: none; background: none; text-align: center; font-size: 20px; margin: 0;padding: 10px">I'm
+                    you, Survey, just... better</p>
+                <div class="containera" style="margin-top: 0">
+                    <form action="https://www.w3schools.com/action_page.php?">
+                        <div class="rowa">
+                            <div class="col-25">
+                                <label class="ao" for="noime">First Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input class="ao" type="text" id="noime" name="firstnoime" placeholder="So your name..">
+                            </div>
+                        </div>
+                        <div class="rowa">
+                            <div class="col-25">
+                                <label class="ao" for="lanoime">Last Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input class="ao" type="text" id="lanoime" name="lastnoime" placeholder="And last name..">
+                            </div>
+                        </div>
+                        <div class="rowa">
+                            <div class="col-25">
+                                <label class="ao" for="regioa">Region</label>
+                            </div>
+                            <div class="col-75">
+                                <select class="ao" id="regioa" name="regia">
+                                    <option value="NA">North America</option>
+                                    <option value="europe">Europe</option>
+                                    <option value="asia">Asia</option>
+                                    <option value="india">India</option>
+                                    <option value="SA">South America</option>
+                                    <option value="australia">Australia</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="rowa">
+                            <div class="col-25">
+                                <label class="ao" for="zone">Subject</label>
+                            </div>
+                            <div class="col-75">
+                            <textarea class="ao" id="zone" name="zona" placeholder="Write some stuff.."
+                                      style="height: 200px"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="rowa">
+                            <input class="ao" type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+
+                <br>
+                <div style="border-radius: 50px" class="flex-containerico">
+                    <div style="border-radius: 50px 15px 5px 30px" class="boxic font-effect-outline">Buckle up mate, we are
+                        going down!<br>
+                        yeeeeeeeee eeeeeee eeeeeeeeeee eeeeeeee eeeeee eeeeeee eeee eeeeee eeeeeee eeeee eeeee eeeeeeee eeee
+                        eeeee eeet!
+                    </div>
+                    <div style="border-radius: 15px 50px 30px 5px" class="boxic font-effect-outline">No! Wait, WAIT!</div>
+                </div>
